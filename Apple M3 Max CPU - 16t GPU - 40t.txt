@@ -1,39 +1,4 @@
-% hashcat -b -m 0 -O
-hashcat (v6.2.6) starting in benchmark mode
-
-Benchmarking uses hand-optimized kernel code by default.
-You can use it in your cracking session by setting the -O option.
-Note: Using optimized kernel code limits the maximum supported password length.
-To disable the optimized kernel code in benchmark mode, use the -w option.
-
-* Device #2: Apple's OpenCL drivers (GPU) are known to be unreliable.
-             You have been warned.
-
-METAL API (Metal 343.14)
-========================
-* Device #1: Apple M3 Max, 18368/36864 MB, 40MCU
-
-OpenCL API (OpenCL 1.2 (Feb 10 2024 00:43:19)) - Platform #1 [Apple]
-====================================================================
-* Device #2: Apple M3 Max, skipped
-
-Benchmark relevant options:
-===========================
-* --optimized-kernel-enable
-
--------------------
-* Hash-Mode 0 (MD5)
--------------------
-
-Speed.#1.........: 19099.8 MH/s (69.77ms) @ Accel:1024 Loops:1024 Thr:32 Vec:1
-
-Started: Fri Mar 28 18:52:52 2025
-Stopped: Fri Mar 28 18:52:58 2025
-tnangel@dev Documents % hashcat -b --optimized-kernel-enableO
-hashcat_bin: unrecognized option `--optimized-kernel-enableO'
-Invalid argument specified.
-
-tnangel@dev Documents % hashcat -b --optimized-kernel-enable 
+% hashcat -b --optimized-kernel-enable 
 hashcat (v6.2.6) starting in benchmark mode
 
 Benchmarking uses hand-optimized kernel code by default.
