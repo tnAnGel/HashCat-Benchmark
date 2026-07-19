@@ -4,7 +4,7 @@
 найти (⬜). Отмечаем только карты, для которых реально может существовать
 публичный вывод `hashcat -b`. Ищем **постепенно, по батчам**.
 
-**Текущее покрытие: 67 карт.**
+**Текущее покрытие: 77 карт.**
 Легенда: ✅ есть · ⬜ ищем · 🔒 вряд ли существует публичный бенчмарк
 
 ---
@@ -17,10 +17,10 @@
 - ⬜ GTX TITAN · ⬜ TITAN Black · ⬜ TITAN Z
 
 ### Maxwell (GTX 900)
-- ⬜ GTX 950 · ✅ GTX 960 · ✅ GTX 970 · ⬜ GTX 980 · ✅ GTX 980 Ti · ✅ GTX TITAN X
+- ⬜ GTX 950 · ✅ GTX 960 · ✅ GTX 970 · ✅ GTX 980 · ✅ GTX 980 Ti · ✅ GTX TITAN X
 
 ### Pascal (GTX 10)
-- ⬜ GT 1030 · ⬜ GTX 1050 · ✅ GTX 1050 Ti · ✅ GTX 1060 3GB · ✅ GTX 1060 6GB
+- ⬜ GT 1030 · ✅ GTX 1050 · ✅ GTX 1050 Ti · ✅ GTX 1060 3GB · ✅ GTX 1060 6GB
 - ✅ GTX 1070 · ✅ GTX 1070 Ti · ✅ GTX 1080 · ✅ GTX 1080 Ti
 - ⬜ TITAN X (Pascal) · ⬜ TITAN Xp
 
@@ -28,19 +28,19 @@
 - ⬜ GTX 1630 · ✅ GTX 1650 · ⬜ GTX 1650 SUPER · ✅ GTX 1660 · ✅ GTX 1660 SUPER · ⬜ GTX 1660 Ti
 
 ### Turing (RTX 20)
-- ✅ RTX 2060 · ✅ RTX 2060 SUPER · ⬜ RTX 2070 · ⬜ RTX 2070 SUPER
-- ✅ RTX 2080 · ⬜ RTX 2080 SUPER · ✅ RTX 2080 Ti · ✅ TITAN RTX
+- ✅ RTX 2060 · ✅ RTX 2060 SUPER · ✅ RTX 2070 · ✅ RTX 2070 SUPER
+- ✅ RTX 2080 · ✅ RTX 2080 SUPER · ✅ RTX 2080 Ti · ✅ TITAN RTX
 
 ### Ampere (RTX 30)
 - ⬜ RTX 3050 · ✅ RTX 3060 · ✅ RTX 3060 Ti · ✅ RTX 3070 · ✅ RTX 3070 Ti
-- ✅ RTX 3080 · ⬜ RTX 3080 12GB · ✅ RTX 3080 Ti · ✅ RTX 3090 · ⬜ RTX 3090 Ti
+- ✅ RTX 3080 · ⬜ RTX 3080 12GB · ✅ RTX 3080 Ti · ✅ RTX 3090 · ✅ RTX 3090 Ti
 
 ### Ada Lovelace (RTX 40)
 - ✅ RTX 4060 · ✅ RTX 4060 Ti · ✅ RTX 4070 · ✅ RTX 4070 SUPER
-- ⬜ RTX 4070 Ti · ✅ RTX 4070 Ti SUPER · ✅ RTX 4080 · ✅ RTX 4080 SUPER · ✅ RTX 4090
+- ✅ RTX 4070 Ti · ✅ RTX 4070 Ti SUPER · ✅ RTX 4080 · ✅ RTX 4080 SUPER · ✅ RTX 4090
 
 ### Blackwell (RTX 50)
-- ⬜ RTX 5050 · ⬜ RTX 5060 · ✅ RTX 5060 Ti · ⬜ RTX 5070 · ✅ RTX 5070 Ti · ✅ RTX 5080 · ✅ RTX 5090
+- ⬜ RTX 5050 · ⬜ RTX 5060 · ✅ RTX 5060 Ti · ✅ RTX 5070 · ✅ RTX 5070 Ti · ✅ RTX 5080 · ✅ RTX 5090
 
 ## NVIDIA GeForce — Laptop
 - ✅ RTX 3070 Laptop · ⬜ RTX 3060 Laptop · ⬜ RTX 3080 Laptop
@@ -71,7 +71,7 @@
 - ⬜ R9 Fury · ⬜ R9 Fury X · ⬜ R9 Nano · ⬜ R9 380 / 380X
 
 ### Polaris (RX 400 / 500)
-- ⬜ RX 460 · ⬜ RX 470 · ⬜ RX 480 · ⬜ RX 550 · ⬜ RX 560 · ⬜ RX 570 · ✅ RX 580 · ⬜ RX 590
+- ⬜ RX 460 · ⬜ RX 470 · ⬜ RX 480 · ⬜ RX 550 · ⬜ RX 560 · ⬜ RX 570 · ✅ RX 580 · ✅ RX 590
 
 ### Vega
 - ✅ RX Vega 56 · ✅ RX Vega 64 · ✅ Radeon VII
@@ -81,7 +81,7 @@
 
 ### RDNA 2 (RX 6000)
 - ⬜ RX 6400 · ⬜ RX 6500 XT · ⬜ RX 6600 · ✅ RX 6600 XT · ⬜ RX 6650 XT
-- ✅ RX 6700 XT · ⬜ RX 6750 XT · ⬜ RX 6800 · ✅ RX 6800 XT · ⬜ RX 6900 XT · ⬜ RX 6950 XT
+- ✅ RX 6700 XT · ⬜ RX 6750 XT · ⬜ RX 6800 · ✅ RX 6800 XT · ⬜ RX 6900 XT · ✅ RX 6950 XT
 
 ### RDNA 3 (RX 7000)
 - ⬜ RX 7600 · ⬜ RX 7600 XT · ⬜ RX 7700 XT · ⬜ RX 7800 XT
@@ -117,10 +117,12 @@
 редким. Каждый батч — отдельный заход поиска; найденное сразу оформляется в
 папки и попадает в сводную таблицу README.
 
-1. **Батч 1 — популярные десктопные:** RTX 2070/2070 S/2080 S, RTX 3050/3090 Ti,
-   RTX 4070 Ti, RTX 5070/5060, GTX 980/1050/1060; AMD RX 7900 XTX/7800 XT/7700 XT/
-   7600, RX 6800/6900 XT/6950 XT/6650 XT/6750 XT, RX 5700/5600 XT/590/570;
-   Intel Arc A770/A750/A380.
+1. **Батч 1 — популярные десктопные ✅ ВЫПОЛНЕН.** Найдено 10:
+   RTX 2070/2070 S/2080 S, RTX 3090 Ti, RTX 4070 Ti, RTX 5070, GTX 980/1050,
+   RX 590/6950 XT. Не нашли (нет реального сырого вывода): RTX 3050, RTX 5060,
+   RX 7900 XTX, 7800 XT, 7700 XT, 7600, 6900 XT, 6650 XT, 6750 XT, 5700, 5600 XT,
+   570, Intel Arc A770/A750/A380. RX 6800 — есть только «реконструированный»
+   вывод из комментария к гисту, не взят (нужен подлинный).
 2. **Батч 2 — data-center:** V100 32GB, A100 80GB, A40/A30/A10, H200, L40/L40S,
    Tesla P40/M60.
 3. **Батч 3 — Apple Silicon:** M1/M2/M4 (Pro/Max/Ultra).
