@@ -3,7 +3,7 @@
 - **Вендор / Vendor:** NVIDIA
 - **Видеокарта / GPU:** NVIDIA GeForce GTX 980 Ti
 - **Конфигурация / Setup:** 8x rig
-- **Версия hashcat / Version:** ?
+- **Версия hashcat / Version:** v1.37
 - **Источник / Source:** [siseci](https://github.com/siseci/hashcat-benchmark-comparison)
 
 ## Полный вывод `hashcat -b` / Full benchmark output

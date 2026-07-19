@@ -3,7 +3,7 @@
 - **Вендор / Vendor:** AMD
 - **Видеокарта / GPU:** AMD Radeon R9 290
 - **Конфигурация / Setup:** 8x rig
-- **Версия hashcat / Version:** ?
+- **Версия hashcat / Version:** v1.00
 - **Источник / Source:** [siseci](https://github.com/siseci/hashcat-benchmark-comparison)
 
 ## Полный вывод `hashcat -b` / Full benchmark output

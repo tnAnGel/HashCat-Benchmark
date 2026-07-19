@@ -3,7 +3,7 @@
 - **Вендор / Vendor:** NVIDIA
 - **Видеокарта / GPU:** NVIDIA GeForce RTX 2060
 - **Конфигурация / Setup:** 12GB
-- **Версия hashcat / Version:** ?
+- **Версия hashcat / Version:** v6.2.3
 - **Источник / Source:** [PHCS-gh](https://github.com/PHCS-gh/Hashcat-benchmark)
 
 ## Ключевые результаты / Highlights

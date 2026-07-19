@@ -2,7 +2,7 @@
 
 - **Вендор / Vendor:** NVIDIA
 - **Видеокарта / GPU:** NVIDIA GeForce GTX 1050 Ti
-- **Версия hashcat / Version:** ?
+- **Версия hashcat / Version:** v6.2.3
 - **Источник / Source:** [PHCS-gh](https://github.com/PHCS-gh/Hashcat-benchmark)
 
 ## Ключевые результаты / Highlights

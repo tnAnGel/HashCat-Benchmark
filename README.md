@@ -12,8 +12,8 @@
 
 ## 📊 Что внутри
 
-- **62 видеокарт** (AMD: 8 · Apple: 1 · Intel: 2 · NVIDIA: 51)
-- **97 документов** с бенчмарками (по нескольким источникам, версиям hashcat и конфигурациям — 1×, 4×, 8× и т.д.)
+- **67 видеокарт** (AMD: 10 · Apple: 1 · Intel: 2 · NVIDIA: 54)
+- **102 документов** с бенчмарками (по нескольким источникам, версиям hashcat и конфигурациям — 1×, 4×, 8× и т.д.)
 - Все поколения: NVIDIA (Maxwell → Pascal → Turing → Ampere → Ada → **Blackwell**),
   AMD (Polaris → Vega → RDNA → RDNA 2 → **RDNA 3**), Intel Arc, Apple Silicon.
 
@@ -86,28 +86,33 @@ HashCat-Benchmark/
 | 38 | [NVIDIA GeForce RTX 4060](<NVIDIA GeForce RTX 4060>) | 28.6 GH/s | 48.8 GH/s | 4.0 GH/s | 1.2 GH/s | 461 kH/s | 38.7 kH/s |
 | 39 | [NVIDIA GeForce RTX 2060](<NVIDIA GeForce RTX 2060>) | 27.1 GH/s | 47.6 GH/s | 3.6 GH/s | 1.2 GH/s | 418 kH/s | 28.3 kH/s |
 | 40 | [NVIDIA P102-100](<NVIDIA P102-100>) | 26.5 GH/s | 43.3 GH/s | 3.9 GH/s | 1.3 GH/s | 549 kH/s | 27.2 kH/s |
-| 41 | [NVIDIA GeForce RTX 3060](<NVIDIA GeForce RTX 3060>) | 25.2 GH/s | 44.2 GH/s | 3.4 GH/s | 1.1 GH/s | 395 kH/s | 36.7 kH/s |
-| 42 | [Intel Arc B580](<Intel Arc B580>) | 24.7 GH/s | 33.3 GH/s | 1.3 GH/s | 318 MH/s | 580 kH/s | 15.4 kH/s |
-| 43 | [NVIDIA GeForce GTX 1080](<NVIDIA GeForce GTX 1080>) | 24.7 GH/s | 43.0 GH/s | 3.1 GH/s | 1.0 GH/s | 440 kH/s | 21.6 kH/s |
-| 44 | [NVIDIA GeForce GTX 1070 Ti](<NVIDIA GeForce GTX 1070 Ti>) | 24.3 GH/s | 41.3 GH/s | 3.0 GH/s | 986 MH/s | 424 kH/s | 21.0 kH/s |
-| 45 | [Intel Arc A770M](<Intel Arc A770M>) | 24.1 GH/s | 40.4 GH/s | 114 MH/s | 806 MH/s | 212 kH/s | — |
-| 46 | [AMD Radeon RX 5700 XT](<AMD Radeon RX 5700 XT>) | 23.8 GH/s | 38.1 GH/s | 4.1 GH/s | 1.1 GH/s | — | 18.2 kH/s |
-| 47 | [NVIDIA GeForce GTX 1070](<NVIDIA GeForce GTX 1070>) | 19.6 GH/s | 33.8 GH/s | 2.5 GH/s | 809 MH/s | 350 kH/s | 16.7 kH/s |
-| 48 | [NVIDIA GeForce GTX 1660 SUPER](<NVIDIA GeForce GTX 1660 SUPER>) | 19.6 GH/s | 34.9 GH/s | 2.6 GH/s | 878 MH/s | 305 kH/s | 20.1 kH/s |
-| 49 | [Apple M3 Max](<Apple M3 Max>) | 19.1 GH/s | 32.6 GH/s | 3.0 GH/s | 594 MH/s | 408 kH/s | 32.6 kH/s |
-| 50 | [NVIDIA GeForce GTX 1660](<NVIDIA GeForce GTX 1660>) | 19.0 GH/s | 32.6 GH/s | 2.4 GH/s | 795 MH/s | 288 kH/s | 19.4 kH/s |
-| 51 | [NVIDIA GeForce GTX 980 Ti](<NVIDIA GeForce GTX 980 Ti>) | 18.9 GH/s | 31.7 GH/s | 2.3 GH/s | 793 MH/s | — | 10.9 kH/s |
-| 52 | [NVIDIA GeForce GTX TITAN X](<NVIDIA GeForce GTX TITAN X>) | 15.8 GH/s | 25.3 GH/s | 2.2 GH/s | 742 MH/s | 325 kH/s | 14.7 kH/s |
-| 53 | [NVIDIA P104-100](<NVIDIA P104-100>) | 13.2 GH/s | 21.1 GH/s | 1.9 GH/s | 643 MH/s | 269 kH/s | 16.6 kH/s |
-| 54 | [NVIDIA GeForce GTX 1060 6GB](<NVIDIA GeForce GTX 1060 6GB>) | 13.1 GH/s | 22.6 GH/s | 1.7 GH/s | 535 MH/s | 235 kH/s | 11.0 kH/s |
-| 55 | [NVIDIA GeForce GTX 1650](<NVIDIA GeForce GTX 1650>) | 12.6 GH/s | 22.8 GH/s | 1.7 GH/s | 577 MH/s | 199 kH/s | 13.1 kH/s |
-| 56 | [NVIDIA GeForce GTX 1060 3GB](<NVIDIA GeForce GTX 1060 3GB>) | 10.7 GH/s | 16.1 GH/s | 1.1 GH/s | 362 MH/s | 168 kH/s | 8.1 kH/s |
-| 57 | [AMD Radeon R9 290](<AMD Radeon R9 290>) | 10.2 GH/s | 18.0 GH/s | 1.4 GH/s | 99.8 MH/s | — | 4.5 kH/s |
-| 58 | [NVIDIA P106-100](<NVIDIA P106-100>) | 9.5 GH/s | 16.4 GH/s | 1.4 GH/s | 336 MH/s | — | 5.9 kH/s |
-| 59 | [NVIDIA GeForce GTX 1650 Ti](<NVIDIA GeForce GTX 1650 Ti>) | 6.4 GH/s | 11.6 GH/s | 850 MH/s | 254 MH/s | 157 kH/s | 1.4 kH/s |
-| 60 | [AMD Radeon RX 580](<AMD Radeon RX 580>) | 5.9 GH/s | 9.7 GH/s | 843 MH/s | 154 MH/s | 65.0 kH/s | 4.5 kH/s |
-| 61 | [NVIDIA GeForce GTX 1050 Ti](<NVIDIA GeForce GTX 1050 Ti>) | 5.6 GH/s | 5.6 GH/s | 375 MH/s | 94.8 MH/s | 50.9 kH/s | 4.4 kH/s |
-| 62 | [NVIDIA Tesla K80](<NVIDIA Tesla K80>) | 4.6 GH/s | 7.7 GH/s | 785 MH/s | 257 MH/s | — | 2.6 kH/s |
+| 41 | [AMD Radeon RX 6600 XT](<AMD Radeon RX 6600 XT>) | 25.6 GH/s | 40.6 GH/s | 4.2 GH/s | 1.1 GH/s | 496 kH/s | 29.9 kH/s |
+| 42 | [NVIDIA GeForce RTX 3060](<NVIDIA GeForce RTX 3060>) | 25.2 GH/s | 44.2 GH/s | 3.4 GH/s | 1.1 GH/s | 395 kH/s | 36.7 kH/s |
+| 43 | [Intel Arc B580](<Intel Arc B580>) | 24.7 GH/s | 33.3 GH/s | 1.3 GH/s | 318 MH/s | 580 kH/s | 15.4 kH/s |
+| 44 | [NVIDIA GeForce GTX 1080](<NVIDIA GeForce GTX 1080>) | 24.7 GH/s | 43.0 GH/s | 3.1 GH/s | 1.0 GH/s | 440 kH/s | 21.6 kH/s |
+| 45 | [NVIDIA GeForce GTX 1070 Ti](<NVIDIA GeForce GTX 1070 Ti>) | 24.3 GH/s | 41.3 GH/s | 3.0 GH/s | 986 MH/s | 424 kH/s | 21.0 kH/s |
+| 46 | [Intel Arc A770M](<Intel Arc A770M>) | 24.1 GH/s | 40.4 GH/s | 114 MH/s | 806 MH/s | 212 kH/s | — |
+| 47 | [AMD Radeon RX 5700 XT](<AMD Radeon RX 5700 XT>) | 23.8 GH/s | 38.1 GH/s | 4.1 GH/s | 1.1 GH/s | — | 18.2 kH/s |
+| 48 | [NVIDIA Tesla P100](<NVIDIA Tesla P100>) | 22.0 GH/s | — | — | — | — | — |
+| 49 | [NVIDIA GeForce GTX 1070](<NVIDIA GeForce GTX 1070>) | 19.6 GH/s | 33.8 GH/s | 2.5 GH/s | 809 MH/s | 350 kH/s | 16.7 kH/s |
+| 50 | [NVIDIA GeForce GTX 1660 SUPER](<NVIDIA GeForce GTX 1660 SUPER>) | 19.6 GH/s | 34.9 GH/s | 2.6 GH/s | 878 MH/s | 305 kH/s | 20.1 kH/s |
+| 51 | [Apple M3 Max](<Apple M3 Max>) | 19.1 GH/s | 32.6 GH/s | 3.0 GH/s | 594 MH/s | 408 kH/s | 32.6 kH/s |
+| 52 | [NVIDIA GeForce GTX 1660](<NVIDIA GeForce GTX 1660>) | 19.0 GH/s | 32.6 GH/s | 2.4 GH/s | 795 MH/s | 288 kH/s | 19.4 kH/s |
+| 53 | [NVIDIA GeForce GTX 980 Ti](<NVIDIA GeForce GTX 980 Ti>) | 18.9 GH/s | 31.7 GH/s | 2.3 GH/s | 793 MH/s | — | 10.9 kH/s |
+| 54 | [NVIDIA GeForce GTX TITAN X](<NVIDIA GeForce GTX TITAN X>) | 15.8 GH/s | 25.3 GH/s | 2.2 GH/s | 742 MH/s | 325 kH/s | 14.7 kH/s |
+| 55 | [NVIDIA P104-100](<NVIDIA P104-100>) | 13.2 GH/s | 21.1 GH/s | 1.9 GH/s | 643 MH/s | 269 kH/s | 16.6 kH/s |
+| 56 | [NVIDIA GeForce GTX 1060 6GB](<NVIDIA GeForce GTX 1060 6GB>) | 13.1 GH/s | 22.6 GH/s | 1.7 GH/s | 535 MH/s | 235 kH/s | 11.0 kH/s |
+| 57 | [NVIDIA GeForce GTX 1650](<NVIDIA GeForce GTX 1650>) | 12.6 GH/s | 22.8 GH/s | 1.7 GH/s | 577 MH/s | 199 kH/s | 13.1 kH/s |
+| 58 | [NVIDIA GeForce GTX 1060 3GB](<NVIDIA GeForce GTX 1060 3GB>) | 10.7 GH/s | 16.1 GH/s | 1.1 GH/s | 362 MH/s | 168 kH/s | 8.1 kH/s |
+| 59 | [NVIDIA GeForce GTX 970](<NVIDIA GeForce GTX 970>) | 10.4 GH/s | 21.4 GH/s | 1.3 GH/s | 410 MH/s | — | 9.0 kH/s |
+| 60 | [AMD Radeon R9 290](<AMD Radeon R9 290>) | 10.2 GH/s | 18.0 GH/s | 1.4 GH/s | 99.8 MH/s | — | 4.5 kH/s |
+| 61 | [NVIDIA P106-100](<NVIDIA P106-100>) | 9.5 GH/s | 16.4 GH/s | 1.4 GH/s | 336 MH/s | — | 5.9 kH/s |
+| 62 | [NVIDIA GeForce GTX 960](<NVIDIA GeForce GTX 960>) | 6.5 GH/s | 11.9 GH/s | 862 MH/s | 255 MH/s | — | 3.8 kH/s |
+| 63 | [NVIDIA GeForce GTX 1650 Ti](<NVIDIA GeForce GTX 1650 Ti>) | 6.4 GH/s | 11.6 GH/s | 850 MH/s | 254 MH/s | 157 kH/s | 1.4 kH/s |
+| 64 | [AMD Radeon RX 580](<AMD Radeon RX 580>) | 5.9 GH/s | 9.7 GH/s | 843 MH/s | 154 MH/s | 65.0 kH/s | 4.5 kH/s |
+| 65 | [NVIDIA GeForce GTX 1050 Ti](<NVIDIA GeForce GTX 1050 Ti>) | 5.6 GH/s | 5.6 GH/s | 375 MH/s | 94.8 MH/s | 50.9 kH/s | 4.4 kH/s |
+| 66 | [NVIDIA Tesla K80](<NVIDIA Tesla K80>) | 4.6 GH/s | 7.7 GH/s | 785 MH/s | 257 MH/s | — | 2.6 kH/s |
+| 67 | [AMD Radeon (Pro) Vega 56](<AMD Radeon (Pro) Vega 56>) | — | — | — | — | — | — |
 
 > ⚠️ Цифры взяты из разных прогонов (разные драйверы, ОС, версии hashcat, разгон),
 > поэтому это **ориентир**, а не строгое сравнение. Точные условия — в каждом
@@ -137,6 +142,15 @@ hashcat -b --benchmark-all       # ВСЕ поддерживаемые режи�
 hashcat -b -m 3200               # конкретный режим (bcrypt)
 ```
 
+## 🕳️ Известные пробелы
+
+Реальный (не выдуманный) полный вывод `hashcat -b` не удалось найти для: **AMD Radeon RX 7900 XTX**,
+**RX 6900 XT**, **RX 570**, **RX 6600** (не XT), **NVIDIA TITAN V**, **RTX 3050** (десктопная),
+**RTX 4050 Laptop**, **Intel Arc A380**, **Arc A750**. По части из них есть только сводные таблицы
+рейтингов (одно число, без сырого вывода) или посты на форуме hashcat.net, недоступном из окружения,
+в котором собирался этот репозиторий — туда данные не включались, чтобы не подсовывать нецельный
+или переоформленный результат вместо настоящего вывода консоли.
+
 ## 🙏 Источники
 
 Данные собраны из публичных бенчмарков сообщества hashcat:
@@ -146,7 +160,10 @@ hashcat -b -m 3200               # конкретный режим (bcrypt)
 - [siseci/hashcat-benchmark-comparison](https://github.com/siseci/hashcat-benchmark-comparison)
 - [PHCS-gh/Hashcat-benchmark](https://github.com/PHCS-gh/Hashcat-benchmark)
 - [whitefight18/hashcat_benchmark](https://github.com/whitefight18/hashcat_benchmark)
-- Гисты: Chick3nman, epixoip, gartnera, greyltc, ConanChiles, pandada8, gerry, synch-cc и др.
+- Гисты: Chick3nman, epixoip, gartnera, greyltc, ConanChiles, pandada8, gerry, synch-cc,
+  soxrok2212, rarecoil и др.
+- GitHub issues: hashcat/hashcat #1489, #1497 (Tesla P100, Vega 56)
+- [DRIgnazGortngschirl/Benchmark-Scores-of-HashCAT](https://github.com/DRIgnazGortngschirl/Benchmark-Scores-of-HashCAT)
 - Оригинальный тест Apple M3 Max — из этого репозитория.
 
 Точная ссылка на источник указана **в каждом** документе.

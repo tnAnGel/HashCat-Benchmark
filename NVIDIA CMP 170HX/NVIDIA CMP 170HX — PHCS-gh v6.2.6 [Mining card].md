@@ -3,7 +3,7 @@
 - **Вендор / Vendor:** NVIDIA
 - **Видеокарта / GPU:** NVIDIA CMP 170HX
 - **Конфигурация / Setup:** Mining card
-- **Версия hashcat / Version:** ?
+- **Версия hashcat / Version:** v6.2.6
 - **Источник / Source:** [PHCS-gh](https://github.com/PHCS-gh/Hashcat-benchmark)
 
 ## Ключевые результаты / Highlights

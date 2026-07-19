@@ -3,7 +3,7 @@
 - **Вендор / Vendor:** NVIDIA
 - **Видеокарта / GPU:** NVIDIA GeForce GTX TITAN X
 - **Конфигурация / Setup:** 8x rig
-- **Версия hashcat / Version:** ?
+- **Версия hashcat / Version:** v1.36
 - **Источник / Source:** [siseci](https://github.com/siseci/hashcat-benchmark-comparison)
 
 ## Полный вывод `hashcat -b` / Full benchmark output
