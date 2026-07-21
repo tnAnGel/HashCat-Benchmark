@@ -14,16 +14,23 @@
 
 По этим картам обычно есть гисты/репозитории с полным выводом. Идём роями.
 
-### Батч 2-redo (data-center) — 🔄 ВЫПОЛНЯЕТСЯ СЕЙЧАС
-V100 32GB (PCIe/SXM2), A100 80GB (PCIe/SXM4), A40, A30, A10, A16, H200,
-H100 SXM5, L4, L40, Tesla P40/M60/M40/K40, GH200, B200.
+### Батч 2-redo (data-center) — ✅ ВЫПОЛНЕН
+Найдено 4: **B200**, **H100 SXM5**, **L4**, **Tesla M60**. Не нашлось (нет публичного
+вывода): V100 32GB, A100 80GB, A40/A30/A10/A16, H200, Tesla P40/M40/K40, GH200.
 
-### Батч 5 (workstation + Intel + AMD-десктоп) — план
+### Батч 5 (workstation + Intel + AMD-десктоп) — ✅ ВЫПОЛНЕН
+Найдено 2: **RX 6800**, **RX 6400**. Не нашлось: workstation (A5000/A6000/A4500/
+RTX 4000-5000 Ada/Quadro RTX 8000), Intel Arc (A770/A750/A580/A380/A310),
+RX 6500 XT/6650 XT/6750 XT/5700/5600 XT/5500 XT/480/470/570/560, RTX 3050/3080 12GB,
+GTX 1660 Ti/1650 SUPER — публичного `hashcat -b` не нашлось (часть на blocked hashcat.net).
+
+<details><summary>исходный план Батча 5</summary>
 - **Workstation:** RTX A5000, RTX A6000, RTX A4500, RTX 4000 Ada, RTX 5000 Ada, Quadro RTX 8000
 - **Intel Arc:** A770 (8/16GB), A750, A580, A380, A310
 - **AMD RDNA/RDNA2:** RX 6800, RX 6500 XT, RX 6400, RX 6650 XT, RX 6750 XT, RX 5700, RX 5600 XT, RX 5500 XT
 - **AMD Polaris:** RX 480, RX 470, RX 570, RX 560, RX 550, RX 460
 - **NVIDIA desktop:** RTX 3050, RTX 3080 12GB, GTX 1660 Ti, GTX 1650 SUPER, GTX 950, GTX 750 Ti
+</details>
 
 ## 🟡 Tier B — есть, но за заблокированным доступом (нужна ваша помощь)
 

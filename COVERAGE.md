@@ -4,7 +4,7 @@
 найти (⬜). Отмечаем только карты, для которых реально может существовать
 публичный вывод `hashcat -b`. Ищем **постепенно, по батчам**.
 
-**Текущее покрытие: 92 карты.**
+**Текущее покрытие: 98 карт.**
 Легенда: ✅ есть · ⬜ ищем · 🔒 вряд ли существует публичный бенчмарк
 
 ---
@@ -52,11 +52,11 @@
 - ⬜ RTX 2000 Ada · ⬜ RTX 4000 Ada · ⬜ RTX 5000 Ada · ✅ RTX 6000 Ada Generation
 
 ## NVIDIA Data-center / Compute
-- ⬜ Tesla K40 · ✅ Tesla K80 · ⬜ Tesla M40 · ⬜ Tesla M60 · ⬜ Tesla P40 · ✅ Tesla P100
+- ⬜ Tesla K40 · ✅ Tesla K80 · ⬜ Tesla M40 · ✅ Tesla M60 · ⬜ Tesla P40 · ✅ Tesla P100
 - ✅ Tesla V100 SXM2 16GB · ⬜ V100 32GB · ⬜ V100 PCIe
 - ✅ A100 PCIe 40GB · ⬜ A100 80GB · ⬜ A10 · ⬜ A16 · ⬜ A30 · ⬜ A40 · ✅ A800 80GB
-- ✅ H100 PCIe · ⬜ H100 SXM · ⬜ H200 · ⬜ L4 · ⬜ L40 · ✅ L40S
-- ⬜ B100 · ⬜ B200 · ⬜ GH200 / GB200
+- ✅ H100 PCIe · ✅ H100 SXM · ⬜ H200 · ✅ L4 · ⬜ L40 · ✅ L40S
+- ⬜ B100 · ✅ B200 · ⬜ GH200 / GB200
 
 ## NVIDIA Mining (CMP / P-series)
 - ✅ P102-100 · ✅ P104-100 · ✅ P106-100
@@ -80,8 +80,8 @@
 - ⬜ RX 5500 XT · ⬜ RX 5600 XT · ⬜ RX 5700 · ✅ RX 5700 XT
 
 ### RDNA 2 (RX 6000)
-- ⬜ RX 6400 · ⬜ RX 6500 XT · ✅ RX 6600 · ✅ RX 6600 XT · ⬜ RX 6650 XT
-- ✅ RX 6700 XT · ⬜ RX 6750 XT · ⬜ RX 6800 · ✅ RX 6800 XT · ⬜ RX 6900 XT · ✅ RX 6950 XT
+- ✅ RX 6400 · ⬜ RX 6500 XT · ✅ RX 6600 · ✅ RX 6600 XT · ⬜ RX 6650 XT
+- ✅ RX 6700 XT · ⬜ RX 6750 XT · ✅ RX 6800 · ✅ RX 6800 XT · ⬜ RX 6900 XT · ✅ RX 6950 XT
 
 ### RDNA 3 (RX 7000)
 - ⬜ RX 7600 · ⬜ RX 7600 XT · ⬜ RX 7700 XT · ⬜ RX 7800 XT
