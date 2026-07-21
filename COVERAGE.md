@@ -4,7 +4,7 @@
 найти (⬜). Отмечаем только карты, для которых реально может существовать
 публичный вывод `hashcat -b`. Ищем **постепенно, по батчам**.
 
-**Текущее покрытие: 89 карт.**
+**Текущее покрытие: 92 карты.**
 Легенда: ✅ есть · ⬜ ищем · 🔒 вряд ли существует публичный бенчмарк
 
 ---
@@ -48,14 +48,14 @@
 
 ## NVIDIA Workstation (Quadro / RTX A / RTX Ada)
 - ⬜ Quadro RTX 4000 / 5000 / 6000 / 8000
-- ⬜ RTX A2000 · ✅ RTX A4000 · ⬜ RTX A4500 · ⬜ RTX A5000 · ⬜ RTX A6000
+- ✅ RTX A2000 · ✅ RTX A4000 · ⬜ RTX A4500 · ⬜ RTX A5000 · ⬜ RTX A6000
 - ⬜ RTX 2000 Ada · ⬜ RTX 4000 Ada · ⬜ RTX 5000 Ada · ✅ RTX 6000 Ada Generation
 
 ## NVIDIA Data-center / Compute
 - ⬜ Tesla K40 · ✅ Tesla K80 · ⬜ Tesla M40 · ⬜ Tesla M60 · ⬜ Tesla P40 · ✅ Tesla P100
 - ✅ Tesla V100 SXM2 16GB · ⬜ V100 32GB · ⬜ V100 PCIe
 - ✅ A100 PCIe 40GB · ⬜ A100 80GB · ⬜ A10 · ⬜ A16 · ⬜ A30 · ⬜ A40 · ✅ A800 80GB
-- ✅ H100 PCIe · ⬜ H100 SXM · ⬜ H200 · ⬜ L4 · ⬜ L40 · ⬜ L40S
+- ✅ H100 PCIe · ⬜ H100 SXM · ⬜ H200 · ⬜ L4 · ⬜ L40 · ✅ L40S
 - ⬜ B100 · ⬜ B200 · ⬜ GH200 / GB200
 
 ## NVIDIA Mining (CMP / P-series)
@@ -80,7 +80,7 @@
 - ⬜ RX 5500 XT · ⬜ RX 5600 XT · ⬜ RX 5700 · ✅ RX 5700 XT
 
 ### RDNA 2 (RX 6000)
-- ⬜ RX 6400 · ⬜ RX 6500 XT · ⬜ RX 6600 · ✅ RX 6600 XT · ⬜ RX 6650 XT
+- ⬜ RX 6400 · ⬜ RX 6500 XT · ✅ RX 6600 · ✅ RX 6600 XT · ⬜ RX 6650 XT
 - ✅ RX 6700 XT · ⬜ RX 6750 XT · ⬜ RX 6800 · ✅ RX 6800 XT · ⬜ RX 6900 XT · ✅ RX 6950 XT
 
 ### RDNA 3 (RX 7000)
@@ -127,4 +127,7 @@
    Tesla P40/M60.
 3. **Батч 3 — Apple Silicon ✅ ВЫПОЛНЕН.** Найдено 12: M1/M1 Pro/M1 Max/M1 Ultra,
    M2/M2 Pro/M2 Max/M2 Ultra, M3/M3 Pro, M4 Pro/M4 Max. Не нашли: M3 Ultra, базовый M4.
-4. **Батч 4 — старьё и редкое:** Kepler GTX 600/700, GCN HD 7000/R9, workstation.
+4. **Батч 4 — workstation/DC/AMD ✅ ВЫПОЛНЕН.** Найдено 3: RTX A2000, L40S, RX 6600.
+   Остальное (RX 7900 XTX, 6900 XT, 7800/7700 XT, 7600, Arc A770/A750/A380, RTX 3050/5060,
+   A5000/A6000, V100 32GB, A100 80GB и др.) — публичного сырого вывода `hashcat -b` не нашлось
+   (нет на GitHub, либо только на заблокированных hashcat.net/geeks3d). Ждём, пока кто-то выложит.
