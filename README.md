@@ -12,8 +12,8 @@
 
 ## 📊 Что внутри
 
-- **77 видеокарт** (AMD: 12 · Apple: 1 · Intel: 2 · NVIDIA: 62)
-- **112 документов** с бенчмарками (по нескольким источникам, версиям hashcat и конфигурациям — 1×, 4×, 8× и т.д.)
+- **89 видеокарт** (AMD: 12 · Apple: 13 · Intel: 2 · NVIDIA: 62)
+- **124 документов** с бенчмарками (по нескольким источникам, версиям hashcat и конфигурациям — 1×, 4×, 8× и т.д.)
 - Все поколения: NVIDIA (Maxwell → Pascal → Turing → Ampere → Ada → **Blackwell**),
   AMD (Polaris → Vega → RDNA → RDNA 2 → **RDNA 3**), Intel Arc, Apple Silicon.
 
@@ -93,36 +93,48 @@ HashCat-Benchmark/
 | 45 | [NVIDIA GeForce RTX 2060](<NVIDIA GeForce RTX 2060>) | 27.1 GH/s | 47.6 GH/s | 3.6 GH/s | 1.2 GH/s | 418 kH/s | 28.3 kH/s |
 | 46 | [NVIDIA GeForce RTX 2070](<NVIDIA GeForce RTX 2070>) | 26.9 GH/s | 40.0 GH/s | 4.0 GH/s | 1.3 GH/s | — | 14.3 kH/s |
 | 47 | [NVIDIA P102-100](<NVIDIA P102-100>) | 26.5 GH/s | 43.3 GH/s | 3.9 GH/s | 1.3 GH/s | 549 kH/s | 27.2 kH/s |
-| 48 | [AMD Radeon RX 6600 XT](<AMD Radeon RX 6600 XT>) | 25.6 GH/s | 40.6 GH/s | 4.2 GH/s | 1.1 GH/s | 496 kH/s | 29.9 kH/s |
-| 49 | [NVIDIA GeForce RTX 3060](<NVIDIA GeForce RTX 3060>) | 25.2 GH/s | 44.2 GH/s | 3.4 GH/s | 1.1 GH/s | 395 kH/s | 36.7 kH/s |
-| 50 | [Intel Arc B580](<Intel Arc B580>) | 24.7 GH/s | 33.3 GH/s | 1.3 GH/s | 318 MH/s | 580 kH/s | 15.4 kH/s |
-| 51 | [NVIDIA GeForce GTX 1080](<NVIDIA GeForce GTX 1080>) | 24.7 GH/s | 43.0 GH/s | 3.1 GH/s | 1.0 GH/s | 440 kH/s | 21.6 kH/s |
-| 52 | [NVIDIA GeForce GTX 1070 Ti](<NVIDIA GeForce GTX 1070 Ti>) | 24.3 GH/s | 41.3 GH/s | 3.0 GH/s | 986 MH/s | 424 kH/s | 21.0 kH/s |
-| 53 | [Intel Arc A770M](<Intel Arc A770M>) | 24.1 GH/s | 40.4 GH/s | 114 MH/s | 806 MH/s | 212 kH/s | — |
-| 54 | [AMD Radeon RX 5700 XT](<AMD Radeon RX 5700 XT>) | 23.8 GH/s | 38.1 GH/s | 4.1 GH/s | 1.1 GH/s | — | 18.2 kH/s |
-| 55 | [NVIDIA Tesla P100](<NVIDIA Tesla P100>) | 22.0 GH/s | — | — | — | — | — |
-| 56 | [NVIDIA GeForce GTX 1070](<NVIDIA GeForce GTX 1070>) | 19.6 GH/s | 33.8 GH/s | 2.5 GH/s | 809 MH/s | 350 kH/s | 16.7 kH/s |
-| 57 | [NVIDIA GeForce GTX 1660 SUPER](<NVIDIA GeForce GTX 1660 SUPER>) | 19.6 GH/s | 34.9 GH/s | 2.6 GH/s | 878 MH/s | 305 kH/s | 20.1 kH/s |
-| 58 | [Apple M3 Max](<Apple M3 Max>) | 19.1 GH/s | 32.6 GH/s | 3.0 GH/s | 594 MH/s | 408 kH/s | 32.6 kH/s |
-| 59 | [NVIDIA GeForce GTX 1660](<NVIDIA GeForce GTX 1660>) | 19.0 GH/s | 32.6 GH/s | 2.4 GH/s | 795 MH/s | 288 kH/s | 19.4 kH/s |
-| 60 | [NVIDIA GeForce GTX 980 Ti](<NVIDIA GeForce GTX 980 Ti>) | 18.9 GH/s | 31.7 GH/s | 2.3 GH/s | 793 MH/s | — | 10.9 kH/s |
-| 61 | [NVIDIA GeForce GTX TITAN X](<NVIDIA GeForce GTX TITAN X>) | 15.8 GH/s | 25.3 GH/s | 2.2 GH/s | 742 MH/s | 325 kH/s | 14.7 kH/s |
-| 62 | [AMD Radeon RX 590](<AMD Radeon RX 590>) | 14.0 GH/s | 22.6 GH/s | 1.9 GH/s | 486 MH/s | 236 kH/s | 10.6 kH/s |
-| 63 | [NVIDIA P104-100](<NVIDIA P104-100>) | 13.2 GH/s | 21.1 GH/s | 1.9 GH/s | 643 MH/s | 269 kH/s | 16.6 kH/s |
-| 64 | [NVIDIA GeForce GTX 1060 6GB](<NVIDIA GeForce GTX 1060 6GB>) | 13.1 GH/s | 22.6 GH/s | 1.7 GH/s | 535 MH/s | 235 kH/s | 11.0 kH/s |
-| 65 | [NVIDIA GeForce GTX 1650](<NVIDIA GeForce GTX 1650>) | 12.6 GH/s | 22.8 GH/s | 1.7 GH/s | 577 MH/s | 199 kH/s | 13.1 kH/s |
-| 66 | [NVIDIA GeForce GTX 980](<NVIDIA GeForce GTX 980>) | 11.4 GH/s | 23.2 GH/s | 1.5 GH/s | 490 MH/s | 186 kH/s | 11.4 kH/s |
-| 67 | [NVIDIA GeForce GTX 1060 3GB](<NVIDIA GeForce GTX 1060 3GB>) | 10.7 GH/s | 16.1 GH/s | 1.1 GH/s | 362 MH/s | 168 kH/s | 8.1 kH/s |
-| 68 | [NVIDIA GeForce GTX 970](<NVIDIA GeForce GTX 970>) | 10.4 GH/s | 21.4 GH/s | 1.3 GH/s | 410 MH/s | — | 9.0 kH/s |
-| 69 | [AMD Radeon R9 290](<AMD Radeon R9 290>) | 10.2 GH/s | 18.0 GH/s | 1.4 GH/s | 99.8 MH/s | — | 4.5 kH/s |
-| 70 | [NVIDIA P106-100](<NVIDIA P106-100>) | 9.5 GH/s | 16.4 GH/s | 1.4 GH/s | 336 MH/s | — | 5.9 kH/s |
-| 71 | [NVIDIA GeForce GTX 960](<NVIDIA GeForce GTX 960>) | 6.5 GH/s | 11.9 GH/s | 862 MH/s | 255 MH/s | — | 3.8 kH/s |
-| 72 | [NVIDIA GeForce GTX 1650 Ti](<NVIDIA GeForce GTX 1650 Ti>) | 6.4 GH/s | 11.6 GH/s | 850 MH/s | 254 MH/s | 157 kH/s | 1.4 kH/s |
-| 73 | [AMD Radeon RX 580](<AMD Radeon RX 580>) | 5.9 GH/s | 9.7 GH/s | 843 MH/s | 154 MH/s | 65.0 kH/s | 4.5 kH/s |
-| 74 | [NVIDIA GeForce GTX 1050 Ti](<NVIDIA GeForce GTX 1050 Ti>) | 5.6 GH/s | 5.6 GH/s | 375 MH/s | 94.8 MH/s | 50.9 kH/s | 4.4 kH/s |
-| 75 | [NVIDIA GeForce GTX 1050](<NVIDIA GeForce GTX 1050>) | 5.2 GH/s | 8.7 GH/s | 744 MH/s | 249 MH/s | — | 3.5 kH/s |
-| 76 | [NVIDIA Tesla K80](<NVIDIA Tesla K80>) | 4.6 GH/s | 7.7 GH/s | 785 MH/s | 257 MH/s | — | 2.6 kH/s |
-| 77 | [AMD Radeon (Pro) Vega 56](<AMD Radeon (Pro) Vega 56>) | — | — | — | — | — | — |
+| 48 | [Apple M2 Ultra](<Apple M2 Ultra>) | 26.5 GH/s | 44.5 GH/s | 4.1 GH/s | 1.0 GH/s | 482 kH/s | 15.3 kH/s |
+| 49 | [AMD Radeon RX 6600 XT](<AMD Radeon RX 6600 XT>) | 25.6 GH/s | 40.6 GH/s | 4.2 GH/s | 1.1 GH/s | 496 kH/s | 29.9 kH/s |
+| 50 | [NVIDIA GeForce RTX 3060](<NVIDIA GeForce RTX 3060>) | 25.2 GH/s | 44.2 GH/s | 3.4 GH/s | 1.1 GH/s | 395 kH/s | 36.7 kH/s |
+| 51 | [Intel Arc B580](<Intel Arc B580>) | 24.7 GH/s | 33.3 GH/s | 1.3 GH/s | 318 MH/s | 580 kH/s | 15.4 kH/s |
+| 52 | [NVIDIA GeForce GTX 1080](<NVIDIA GeForce GTX 1080>) | 24.7 GH/s | 43.0 GH/s | 3.1 GH/s | 1.0 GH/s | 440 kH/s | 21.6 kH/s |
+| 53 | [NVIDIA GeForce GTX 1070 Ti](<NVIDIA GeForce GTX 1070 Ti>) | 24.3 GH/s | 41.3 GH/s | 3.0 GH/s | 986 MH/s | 424 kH/s | 21.0 kH/s |
+| 54 | [Intel Arc A770M](<Intel Arc A770M>) | 24.1 GH/s | 40.4 GH/s | 114 MH/s | 806 MH/s | 212 kH/s | — |
+| 55 | [AMD Radeon RX 5700 XT](<AMD Radeon RX 5700 XT>) | 23.8 GH/s | 38.1 GH/s | 4.1 GH/s | 1.1 GH/s | — | 18.2 kH/s |
+| 56 | [Apple M4 Max](<Apple M4 Max>) | 22.1 GH/s | 37.7 GH/s | 3.6 GH/s | 708 MH/s | 486 kH/s | 21.3 kH/s |
+| 57 | [NVIDIA Tesla P100](<NVIDIA Tesla P100>) | 22.0 GH/s | — | — | — | — | — |
+| 58 | [NVIDIA GeForce GTX 1070](<NVIDIA GeForce GTX 1070>) | 19.6 GH/s | 33.8 GH/s | 2.5 GH/s | 809 MH/s | 350 kH/s | 16.7 kH/s |
+| 59 | [NVIDIA GeForce GTX 1660 SUPER](<NVIDIA GeForce GTX 1660 SUPER>) | 19.6 GH/s | 34.9 GH/s | 2.6 GH/s | 878 MH/s | 305 kH/s | 20.1 kH/s |
+| 60 | [Apple M3 Max](<Apple M3 Max>) | 19.1 GH/s | 32.6 GH/s | 3.0 GH/s | 594 MH/s | 408 kH/s | 32.6 kH/s |
+| 61 | [NVIDIA GeForce GTX 1660](<NVIDIA GeForce GTX 1660>) | 19.0 GH/s | 32.6 GH/s | 2.4 GH/s | 795 MH/s | 288 kH/s | 19.4 kH/s |
+| 62 | [NVIDIA GeForce GTX 980 Ti](<NVIDIA GeForce GTX 980 Ti>) | 18.9 GH/s | 31.7 GH/s | 2.3 GH/s | 793 MH/s | — | 10.9 kH/s |
+| 63 | [Apple M1 Ultra](<Apple M1 Ultra>) | 17.1 GH/s | 28.6 GH/s | 1.8 GH/s | 575 MH/s | 297 kH/s | 10.1 kH/s |
+| 64 | [NVIDIA GeForce GTX TITAN X](<NVIDIA GeForce GTX TITAN X>) | 15.8 GH/s | 25.3 GH/s | 2.2 GH/s | 742 MH/s | 325 kH/s | 14.7 kH/s |
+| 65 | [AMD Radeon RX 590](<AMD Radeon RX 590>) | 14.0 GH/s | 22.6 GH/s | 1.9 GH/s | 486 MH/s | 236 kH/s | 10.6 kH/s |
+| 66 | [Apple M1 Max](<Apple M1 Max>) | 13.2 GH/s | 21.1 GH/s | 2.0 GH/s | 396 MH/s | 248 kH/s | 9.3 kH/s |
+| 67 | [NVIDIA P104-100](<NVIDIA P104-100>) | 13.2 GH/s | 21.1 GH/s | 1.9 GH/s | 643 MH/s | 269 kH/s | 16.6 kH/s |
+| 68 | [NVIDIA GeForce GTX 1060 6GB](<NVIDIA GeForce GTX 1060 6GB>) | 13.1 GH/s | 22.6 GH/s | 1.7 GH/s | 535 MH/s | 235 kH/s | 11.0 kH/s |
+| 69 | [Apple M2 Max](<Apple M2 Max>) | 12.9 GH/s | 22.4 GH/s | 2.0 GH/s | 406 MH/s | 246 kH/s | 8.2 kH/s |
+| 70 | [NVIDIA GeForce GTX 1650](<NVIDIA GeForce GTX 1650>) | 12.6 GH/s | 22.8 GH/s | 1.7 GH/s | 577 MH/s | 199 kH/s | 13.1 kH/s |
+| 71 | [NVIDIA GeForce GTX 980](<NVIDIA GeForce GTX 980>) | 11.4 GH/s | 23.2 GH/s | 1.5 GH/s | 490 MH/s | 186 kH/s | 11.4 kH/s |
+| 72 | [NVIDIA GeForce GTX 1060 3GB](<NVIDIA GeForce GTX 1060 3GB>) | 10.7 GH/s | 16.1 GH/s | 1.1 GH/s | 362 MH/s | 168 kH/s | 8.1 kH/s |
+| 73 | [NVIDIA GeForce GTX 970](<NVIDIA GeForce GTX 970>) | 10.4 GH/s | 21.4 GH/s | 1.3 GH/s | 410 MH/s | — | 9.0 kH/s |
+| 74 | [AMD Radeon R9 290](<AMD Radeon R9 290>) | 10.2 GH/s | 18.0 GH/s | 1.4 GH/s | 99.8 MH/s | — | 4.5 kH/s |
+| 75 | [NVIDIA P106-100](<NVIDIA P106-100>) | 9.5 GH/s | 16.4 GH/s | 1.4 GH/s | 336 MH/s | — | 5.9 kH/s |
+| 76 | [Apple M4 Pro](<Apple M4 Pro>) | 9.0 GH/s | 15.7 GH/s | 1.4 GH/s | 292 MH/s | 196 kH/s | 7.5 kH/s |
+| 77 | [Apple M2 Pro](<Apple M2 Pro>) | 7.0 GH/s | 12.0 GH/s | 1.0 GH/s | 648 MH/s | 126 kH/s | 4.4 kH/s |
+| 78 | [Apple M3 Pro](<Apple M3 Pro>) | 6.8 GH/s | 11.7 GH/s | 1.1 GH/s | 220 MH/s | 146 kH/s | 6.0 kH/s |
+| 79 | [NVIDIA GeForce GTX 960](<NVIDIA GeForce GTX 960>) | 6.5 GH/s | 11.9 GH/s | 862 MH/s | 255 MH/s | — | 3.8 kH/s |
+| 80 | [NVIDIA GeForce GTX 1650 Ti](<NVIDIA GeForce GTX 1650 Ti>) | 6.4 GH/s | 11.6 GH/s | 850 MH/s | 254 MH/s | 157 kH/s | 1.4 kH/s |
+| 81 | [AMD Radeon RX 580](<AMD Radeon RX 580>) | 5.9 GH/s | 9.7 GH/s | 843 MH/s | 154 MH/s | 65.0 kH/s | 4.5 kH/s |
+| 82 | [NVIDIA GeForce GTX 1050 Ti](<NVIDIA GeForce GTX 1050 Ti>) | 5.6 GH/s | 5.6 GH/s | 375 MH/s | 94.8 MH/s | 50.9 kH/s | 4.4 kH/s |
+| 83 | [Apple M1 Pro](<Apple M1 Pro>) | 5.5 GH/s | 9.0 GH/s | 867 MH/s | 224 MH/s | 102 kH/s | 3.4 kH/s |
+| 84 | [NVIDIA GeForce GTX 1050](<NVIDIA GeForce GTX 1050>) | 5.2 GH/s | 8.7 GH/s | 744 MH/s | 249 MH/s | — | 3.5 kH/s |
+| 85 | [NVIDIA Tesla K80](<NVIDIA Tesla K80>) | 4.6 GH/s | 7.7 GH/s | 785 MH/s | 257 MH/s | — | 2.6 kH/s |
+| 86 | [Apple M3](<Apple M3>) | 3.3 GH/s | — | 536 MH/s | — | — | — |
+| 87 | [Apple M1](<Apple M1>) | 2.8 GH/s | 4.8 GH/s | 300 MH/s | 97.6 MH/s | 48.9 kH/s | 2.1 kH/s |
+| 88 | [Apple M2](<Apple M2>) | 2.3 GH/s | 2.7 GH/s | 339 MH/s | 120 MH/s | 67.4 kH/s | 2.9 kH/s |
+| 89 | [AMD Radeon (Pro) Vega 56](<AMD Radeon (Pro) Vega 56>) | — | — | — | — | — | — |
 
 > ⚠️ Цифры взяты из разных прогонов (разные драйверы, ОС, версии hashcat, разгон),
 > поэтому это **ориентир**, а не строгое сравнение. Точные условия — в каждом

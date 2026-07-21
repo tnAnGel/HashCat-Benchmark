@@ -4,7 +4,7 @@
 найти (⬜). Отмечаем только карты, для которых реально может существовать
 публичный вывод `hashcat -b`. Ищем **постепенно, по батчам**.
 
-**Текущее покрытие: 77 карт.**
+**Текущее покрытие: 89 карт.**
 Легенда: ✅ есть · ⬜ ищем · 🔒 вряд ли существует публичный бенчмарк
 
 ---
@@ -104,10 +104,10 @@
 ---
 
 ## Apple Silicon
-- ⬜ M1 · ⬜ M1 Pro · ⬜ M1 Max · ⬜ M1 Ultra
-- ⬜ M2 · ⬜ M2 Pro · ⬜ M2 Max · ⬜ M2 Ultra
-- ⬜ M3 · ⬜ M3 Pro · ✅ M3 Max · ⬜ M3 Ultra
-- ⬜ M4 · ⬜ M4 Pro · ⬜ M4 Max
+- ✅ M1 · ✅ M1 Pro · ✅ M1 Max · ✅ M1 Ultra
+- ✅ M2 · ✅ M2 Pro · ✅ M2 Max · ✅ M2 Ultra
+- ✅ M3 · ✅ M3 Pro · ✅ M3 Max · ⬜ M3 Ultra
+- ⬜ M4 · ✅ M4 Pro · ✅ M4 Max
 
 ---
 
@@ -125,5 +125,6 @@
    вывод из комментария к гисту, не взят (нужен подлинный).
 2. **Батч 2 — data-center:** V100 32GB, A100 80GB, A40/A30/A10, H200, L40/L40S,
    Tesla P40/M60.
-3. **Батч 3 — Apple Silicon:** M1/M2/M4 (Pro/Max/Ultra).
+3. **Батч 3 — Apple Silicon ✅ ВЫПОЛНЕН.** Найдено 12: M1/M1 Pro/M1 Max/M1 Ultra,
+   M2/M2 Pro/M2 Max/M2 Ultra, M3/M3 Pro, M4 Pro/M4 Max. Не нашли: M3 Ultra, базовый M4.
 4. **Батч 4 — старьё и редкое:** Kepler GTX 600/700, GCN HD 7000/R9, workstation.
