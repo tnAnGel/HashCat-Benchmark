@@ -1,0 +1,22 @@
+# NVIDIA GeForce RTX 5090 Laptop GPU + Intel (hybrid PTS system) — OpenBenchmarking Hashcat measurements (system-level, partial)
+
+- **Not a per-GPU result:** PTS combines an RTX 5090 Laptop GPU and Intel graphics in one system label; the exported result does not split the Hashcat speed by device.
+- **Evidence:** individual PTS means/repeats; raw Hashcat stdout is not published in the export.
+- **PTS runner:** `hashcat -b --benchmark-min=30` plus the arguments in each row.
+
+| Date | Hashcat | Mode | Benchmark | Mean (H/s) | PTS repeat values (H/s) | CPU host context | Args | Result |
+|---|---|---:|---|---:|---|---|---|---|
+| 2026-07-01 | 7.1.2 | 0 | Benchmark: MD5 | 97062633333 | 95680500000, 97804900000, 97702500000 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 0` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 100 | Benchmark: SHA1 | 33924400000 | 33947700000, 33931700000, 33893800000 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 100` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 1000 | Benchmark: NTLM | 87693543750 | 8254700000, 167500000000, 8248600000, 167400000000, 8248100000, 167100000000, 8246400000, 167100000000, 8243300000, 166800000000, 8248400000, 167100000000, 8254500000, 167200000000, 8252700000, 166900000000 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 1000` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 11600 | Benchmark: 7-Zip | 783769 | 1516100, 58635, 1510500, 58445, 1509900, 58665, 1508100, 57826, 1507200, 58553, 1507500, 58187, 1506100, 58194, 1508200, 58198 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 11600` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 13100 | Benchmark: Kerberos 5 + etype 23 + TGS-REP | 979940650 | 1931100000, 34806400, 1927800000, 34823600, 1921800000, 34946300, 1918800000, 34758500, 1931600000, 34994300, 1920400000, 34784300, 1918900000, 34813200, 1929700000, 35023800 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 13100` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 1400 | Benchmark: SHA-256 | 13355266667 | 13365300000, 13359800000, 13340700000 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 1400` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 1700 | Benchmark: SHA-512 | 4155966667 | 4151200000, 4161200000, 4155500000 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 1700` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 22000 | Benchmark: WPA-PBKDF2-PMKID+EAPOL | 886178 | 1675000, 81825, 1696100, 82727, 1691100, 81995, 1692500, 83713, 1690300, 82725, 1692000, 83207, 1690700, 82735, 1689500, 82728 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 22000` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 3200 | Benchmark: bcrypt | 67662 | 133100, 1987, 133300, 1986, 133300, 1987, 133300, 1986, 133400, 1987, 133400, 1985, 133400, 1986, 133500, 1986 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 3200` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 34100 | Benchmark: LUKS v2 argon2id + SHA-256 + AES | 0 | not provided | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 34100` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 6211 | Benchmark: TrueCrypt RIPEMD160 + XTS | 666795 | 1284000, 50239, 1288700, 50322, 1284600, 50263, 1283000, 50263, 1282500, 50362, 1281700, 50379, 1280500, 50368, 1281200, 50329 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 6211` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+| 2026-07-01 | 7.1.2 | 6800 | Benchmark: LastPass | 2930 | 2928, 2934, 2928 | Intel Core Ultra 9 290HX Plus @ 2.70GHz (24 Cores) | `-m 6800` | [2607028-NE-WINDOWS1195](https://openbenchmarking.org/result/2607028-NE-WINDOWS1195) |
+
+**PTS rows:** 12. Preserve as a combined-system result; do not attribute these speeds to RTX 5090 Laptop GPU or Intel graphics individually.

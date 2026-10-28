@@ -1,0 +1,647 @@
+# 🎯 Чего нет в коллекции — по внешнему рейтингу GPU
+
+В текущем трекере явно перечислено **607 строк целей** (десктоп + мобильные +
+workstation, 2006–2025). Прежнее число 693 не сходится с суммой строк разделов
+(607); расхождение с исходным внешним рейтингом ещё не восстановлено. Поэтому
+счётчики ниже относятся только к 607 строкам, реально перечисленным в этом файле.
+
+- **Есть локальное свидетельство:** 68 целей (39 с исходным benchmark/source-card, 29 partial/aggregate-only)
+- **Пока без сопоставленной карточки:** 539 целей
+
+> Варианты по объёму памяти (`RTX 4060 Ti 8/16 GB`, `RTX 3060 Ti GDDR6X`,
+> `GTX 960 2GB`) засчитаны как уже имеющиеся — в репо они лежат одной папкой.
+> Отдельными позициями ниже они не дублируются.
+
+## Легенда приоритетов
+- **A** — 2019 и новее. Современный hashcat поддерживает, прогоны реально ищутся.
+- **B** — 2014–2018 (Maxwell/Pascal/GCN). Поддержка есть, прогоны реже.
+- **C** — до 2014. Fermi (CUDA CC 2.x), Kepler (CC 3.x), TeraScale, старый GCN —
+  выпали из актуальных CUDA/драйверов. Публичный `hashcat -b` почти не встречается,
+  а что встречается — в формате oclHashcat 1.x (`Speed.GPU.#1`), это не `hashcat -b`.
+- **✅** — локальная карточка с опубликованным результатом; **⚠️** — частичный
+  результат или только PTS/PHCS aggregate; **⬜** — локальной карточки пока нет.
+
+## 🟢 Приоритет A — десктоп/workstation, 2019+ — 39 шт.
+
+- ⚠️ NVIDIA GeForce RTX 4090 D · 2024 (один режим, 4× система)
+- ⚠️ AMD Radeon RX 9070 · 2025 (PTS aggregate only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⬜ AMD Radeon RX 6900 XT Liquid Cooled · 2021
+- ⚠️ AMD Radeon RX 9070 GRE · 2025 (PTS aggregate only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⚠️ AMD Radeon RX 7900 GRE · 2023 (PTS aggregate only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ✅ NVIDIA GeForce RTX 3080 12GB · 2022
+- ⚠️ AMD Radeon RX 7800 XT · 2023 (PTS + PHCS aggregates, no local raw log; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⚠️ AMD Radeon RX 9060 XT 16 GB · 2025 (12-mode PTS result, no local raw stdout; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⬜ AMD Radeon Pro W6800 · 2021
+- ⚠️ AMD Radeon RX 7700 XT · 2023 (XFX PTS aggregate only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⬜ AMD Radeon RX 9060 XT 8 GB · 2025
+- ⬜ NVIDIA GeForce RTX 5060 · 2025
+- ⬜ AMD Radeon RX 6750 XT · 2022
+- ⚠️ AMD Radeon RX 7600 XT · 2024 (XFX PTS aggregate only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ✅ Intel Arc A770 · 2022
+- ⚠️ AMD Radeon RX 7600 · 2023 (PTS aggregate only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⬜ NVIDIA GeForce RTX 5050 · 2025
+- ⚠️ Intel Arc A750 · 2022 (PTS aggregate only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⚠️ Intel Arc A580 · 2023 (PTS aggregate only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⚠️ AMD Radeon RX 5700 · 2019 (12-mode PTS result, no local raw stdout; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⬜ NVIDIA GeForce RTX 3050 · 2022
+- ⬜ Intel Arc A730M · 2022
+- ✅ NVIDIA GeForce GTX 1660 Ti · 2019
+- ✅ AMD Radeon RX 5500 XT · 2019
+- ⬜ AMD Radeon RX 6500 XT · 2022
+- ✅ NVIDIA GeForce RTX 3050 6 GB · 2024
+- ⬜ AMD Radeon RX 5500 XT 4GB · 2019
+- ✅ NVIDIA GeForce GTX 1650 Super · 2019
+- ⬜ AMD Radeon RX 590 GME · 2020
+- ⬜ AMD Radeon RX 5500 · 2019
+- ⚠️ Intel Arc A380 · 2022 (PTS aggregate + proprietary Hashcat-ng mode 22000 scalar; not upstream/raw)
+- ⬜ Intel Arc A370M · 2022
+- ⬜ NVIDIA Quadro T1000 · 2019
+- ⬜ Intel Arc A350M · 2022
+- ⚠️ Intel Arc A310 · 2022 (proprietary Hashcat-ng mode 22000 scalar; not upstream/raw)
+- ⬜ NVIDIA GeForce GTX 1630 · 2022
+- ⬜ Intel Iris Xe MAX Graphics · 2020
+- ⬜ Intel Iris Xe DG1 · 2022
+- ✅ AMD Radeon Pro WX 3200 · 2019
+
+## 🟢 Приоритет A — мобильные, 2019+ — 60 шт.
+
+- ⚠️ NVIDIA GeForce RTX 5090 Mobile · 2025 (PTS result has combined `RTX 5090 Laptop GPU + Intel` graphics label; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⬜ NVIDIA GeForce RTX 5080 Mobile · 2025
+- ⬜ NVIDIA GeForce RTX 4090 Mobile · 2023
+- ⬜ AMD Radeon RX 7900M · 2023
+- ⬜ NVIDIA GeForce RTX 4080 Mobile · 2023
+- ⬜ NVIDIA GeForce RTX 5070 Ti Mobile · 2025
+- ⬜ NVIDIA GeForce RTX 3080 Ti Mobile · 2022
+- ⬜ NVIDIA GeForce RTX 5070 Mobile · 2025
+- ⬜ AMD Radeon RX 6850M XT · 2022
+- ✅ NVIDIA GeForce RTX 3080 Mobile · 2021
+- ⚠️ NVIDIA GeForce RTX 4070 Mobile · 2023 (PTS SHA-512 only, no raw stdout; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⬜ NVIDIA GeForce RTX 3070 Ti Mobile · 2022
+- ⬜ NVIDIA GeForce RTX 5060 Mobile · 2025
+- ⬜ AMD Radeon RX 7600M XT · 2023
+- ⬜ NVIDIA GeForce RTX 5050 Mobile · 2025
+- ⬜ AMD Radeon RX 6700M · 2021
+- ✅ NVIDIA GeForce RTX 4060 Mobile · 2023
+- ⬜ AMD Radeon RX 6800S · 2022
+- ⬜ NVIDIA GeForce RTX 2080 Super Mobile · 2019
+- ⬜ AMD Radeon RX 7700S · 2023
+- ⬜ NVIDIA GeForce RTX 2080 Mobile · 2019
+- ⬜ NVIDIA GeForce RTX 2070 Super Mobile · 2019
+- ⬜ NVIDIA GeForce RTX 2080 Super Max-Q · 2020
+- ⬜ AMD Radeon RX 7600M · 2023
+- ⬜ NVIDIA GeForce RTX 2080 Max-Q · 2019
+- ⬜ NVIDIA GeForce RTX 2070 Mobile · 2019
+- ⚠️ NVIDIA GeForce RTX 2070 Super Max-Q · 2020 — найдены 3 частичных режима
+- ⬜ AMD Radeon RX 7600S · 2023
+- ⬜ AMD Radeon RX 6650M · 2022
+- ⬜ NVIDIA Quadro RTX 4000 Mobile · 2019
+- ⬜ AMD Radeon RX 6700S · 2022
+- ⬜ AMD Radeon RX 6600M · 2021
+- ⬜ NVIDIA GeForce RTX 2070 Max-Q · 2019
+- ✅ NVIDIA GeForce RTX 2060 Max-Q · 2020
+- ⬜ AMD Radeon RX 5600M · 2020
+- ⬜ NVIDIA GeForce GTX 1660 Ti Mobile · 2019
+- ⚠️ NVIDIA GeForce RTX 3050 Ti Mobile · 2021 (PHCS MD5 comparison only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⬜ NVIDIA GeForce RTX 3050 Mobile Refresh 6 GB · 2023
+- ⬜ NVIDIA GeForce GTX 1660 Ti Max-Q · 2019
+- ⬜ AMD Radeon RX 6550M · 2023
+- ⬜ AMD Radeon RX 6500M · 2022
+- ⬜ AMD Radeon RX 5500 Mobile · 2019
+- ✅ AMD Radeon Pro 5500M · 2019
+- ⬜ NVIDIA GeForce RTX 2050 Mobile · 2021
+- ⬜ AMD Radeon RX 5300M · 2019
+- ⬜ NVIDIA Quadro T1200 Mobile · 2021
+- ⬜ NVIDIA GeForce MX570 · 2021
+- ⬜ NVIDIA T550 Mobile · 2022
+- ⬜ NVIDIA GeForce MX550 · 2021
+- ⬜ NVIDIA GeForce GTX 1650 Mobile · 2019
+- ⬜ NVIDIA GeForce GTX 1650 Ti Max-Q · 2020
+- ⬜ NVIDIA GeForce GTX 1650 Max-Q · 2020
+- ⬜ NVIDIA Quadro T500 Mobile · 2020
+- ⬜ NVIDIA GeForce MX450 · 2020
+- ⬜ NVIDIA T600 Laptop · 2021
+- ⬜ NVIDIA GeForce MX350 · 2020
+- ⬜ NVIDIA GeForce MX330 · 2020
+- ⬜ NVIDIA GeForce MX250 · 2019
+- ⬜ AMD Radeon RX 640 Mobile · 2019
+- ⚠️ NVIDIA GeForce MX230 · 2019 (PTS aggregate only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+
+## 🟡 Приоритет B — десктоп/workstation, 2014–2018 — 71 шт.
+
+- ✅ AMD Radeon RX Vega 64 Liquid Cooling · 2017
+- ⬜ AMD Radeon Vega Frontier Edition · 2017
+- ⬜ AMD Radeon R9 295X2 · 2014
+- ⬜ AMD Radeon R9 FURY X · 2015
+- ⬜ AMD Radeon R9 FURY · 2015
+- ⬜ AMD Radeon R9 Nano · 2015
+- ⚠️ AMD Radeon R9 390X · 2015 — legacy вывод, выбраны основные режимы
+- ✅ AMD Radeon RX 480 · 2016
+- ⬜ AMD Radeon R9 390 · 2015
+- ⚠️ AMD Radeon RX 570 Series · 2017 (SHA1 mode, 3-device alias; exact SKU not resolved)
+- ⚠️ AMD Radeon RX 470 · 2016 (PHCS MD5 comparison only; see [`PUBLIC-AGGREGATES.md`](PUBLIC-AGGREGATES.md))
+- ⬜ AMD Radeon RX 470D · 2016
+- ⬜ AMD Radeon R9 380X · 2015
+- ✅ NVIDIA GeForce GTX 1050 3GB · 2018
+- ⬜ AMD Radeon RX 560 · 2017
+- ⬜ AMD Radeon R9 285 · 2014
+- ⬜ AMD Radeon R9 380 · 2015
+- ⬜ AMD Radeon RX 560 2GB · 2017
+- ⬜ NVIDIA Quadro M5000M · 2015
+- ⬜ AMD Radeon R9 280 · 2014
+- ⬜ AMD Radeon RX 460 1024SP · 2017
+- ⬜ AMD Radeon Pro Vega 20 · 2018
+- ⬜ NVIDIA Quadro M3000M · 2015
+- ⬜ NVIDIA Quadro M4000M · 2015
+- ⬜ NVIDIA Quadro M2200 · 2017
+- ✅ NVIDIA GeForce GTX 950 · 2015
+- ⬜ AMD FirePro W7170M · 2015
+- ⬜ AMD Radeon Pro 560X · 2018
+- ⬜ AMD Radeon R9 370 · 2015
+- ⬜ AMD Radeon Pro 460 · 2016
+- ⬜ AMD Radeon R7 370 · 2015
+- ⬜ AMD Radeon R7 265 · 2014
+- ⬜ AMD Radeon Pro Vega 16 · 2018
+- ✅ NVIDIA GeForce GTX 750 Ti · 2014
+- ⬜ AMD Radeon Pro 555 · 2017
+- ⬜ AMD Radeon Pro 455 · 2016
+- ⬜ NVIDIA GeForce GTX 750 v2 · 2015
+- ⬜ NVIDIA Quadro M1000M · 2015
+- ⬜ AMD Radeon Pro 450 · 2016
+- ✅ NVIDIA GeForce GTX 750 · 2014
+- ⬜ AMD Radeon RX 550 · 2017
+- ⬜ AMD Radeon RX 540 · 2017
+- ⬜ AMD Radeon R7 360 · 2015
+- ⬜ AMD Radeon Pro WX 3100 · 2017
+- ⬜ NVIDIA Quadro M2000M · 2015
+- ✅ NVIDIA GeForce GT 1030 · 2017
+- ⬜ AMD FirePro W4300 · 2015
+- ⬜ AMD FirePro W5170M · 2014
+- ⬜ AMD FirePro W5130M · 2015
+- ⬜ AMD Radeon R7 250X · 2014
+- ⬜ NVIDIA Quadro P500 · 2018
+- ⬜ AMD Radeon R6 M340DX · 2015
+- ⬜ NVIDIA Quadro M600M · 2015
+- ✅ NVIDIA GeForce 940MX · 2016
+- ⬜ NVIDIA Quadro K620M · 2015
+- ⬜ AMD FirePro W4100 · 2014
+- ⬜ AMD FirePro W4170M · 2014
+- ⬜ NVIDIA Quadro M500M · 2016
+- ⬜ AMD Radeon R6 M255DX · 2014
+- ⬜ NVIDIA GeForce GT 740 GDDR5 · 2014
+- ⬜ NVIDIA GeForce 930MX · 2016
+- ⬜ AMD Radeon 530 · 2017
+- ⬜ NVIDIA GeForce GT 740 · 2014
+- ⬜ AMD FirePro W4190M · 2015
+- ⬜ NVIDIA GeForce 920MX · 2016
+- ⬜ AMD Radeon R8 M365DX · 2015
+- ⬜ AMD FirePro W2100 · 2014
+- ⬜ AMD Radeon 520 · 2017
+- ⬜ NVIDIA GeForce GT 730 GDDR5 · 2014
+- ⬜ NVIDIA GeForce GT 710 · 2014
+- ⬜ AMD Radeon R5 230 · 2014
+
+## 🟡 Приоритет B — мобильные, 2014–2018 — 81 шт.
+
+- ⬜ NVIDIA GeForce GTX 1080 Mobile · 2016
+- ✅ NVIDIA GeForce GTX 1080 Max-Q · 2017
+- ⬜ NVIDIA Quadro P5000 Mobile · 2017
+- ⬜ NVIDIA GeForce GTX 1070 Mobile · 2016
+- ✅ NVIDIA GeForce GTX 1070 Max-Q · 2017
+- ⬜ NVIDIA Quadro P4000 Mobile · 2017
+- ⬜ NVIDIA Quadro P3200 Mobile · 2018
+- ⬜ NVIDIA GeForce GTX 1060 Mobile · 2016
+- ✅ NVIDIA GeForce GTX 980M · 2014
+- ⬜ NVIDIA Quadro P3000 Mobile · 2017
+- ✅ NVIDIA GeForce GTX 970M · 2014
+- ⬜ AMD Radeon R9 M295X · 2014
+- ⬜ NVIDIA GeForce GTX 1050 Ti Mobile · 2017
+- ⬜ NVIDIA GeForce GTX 1050 Ti Max-Q · 2017
+- ✅ NVIDIA Quadro P2000 Mobile · 2017
+- ✅ AMD Radeon R9 M395X · 2015
+- ⬜ NVIDIA GeForce GTX 880M · 2014
+- ⬜ NVIDIA GeForce GTX 870M · 2014
+- ✅ NVIDIA GeForce GTX 965M · 2015
+- ⬜ NVIDIA GeForce GTX 1050 Mobile · 2017
+- ⬜ AMD Radeon RX 560M · 2017
+- ⬜ AMD Radeon R9 M290X · 2014
+- ⬜ NVIDIA GeForce GTX 1050 Max-Q · 2018
+- ⬜ AMD Radeon RX 460 Mobile · 2016
+- ⬜ AMD Radeon RX 560X Mobile · 2018
+- ⬜ NVIDIA Quadro P1000 Mobile · 2017
+- ✅ NVIDIA GeForce GTX 960M · 2015
+- ⬜ NVIDIA Quadro P620 Mobile · 2018
+- ⬜ AMD Radeon R9 M385X · 2015
+- ✅ NVIDIA GeForce GTX 860M (GM107) · 2014
+- ⬜ AMD Radeon R9 M280X · 2014
+- ⬜ NVIDIA Quadro M620 · 2017
+- ⬜ AMD Radeon R9 M385 · 2015
+- ✅ NVIDIA GeForce GTX 950M · 2015
+- ⬜ NVIDIA GeForce GTX 860M (GK104) · 2014
+- ⬜ NVIDIA GeForce GTX 850M · 2014
+- ⬜ AMD Radeon 540X Mobile · 2018
+- ⬜ AMD Radeon RX 550 Mobile · 2017
+- ⬜ NVIDIA Quadro P600 Mobile · 2017
+- ⬜ AMD Radeon R9 M380 · 2015
+- ⬜ AMD Radeon RX 550X Mobile · 2018
+- ⬜ NVIDIA GeForce MX150 (25 W) · 2017
+- ✅ AMD Radeon R9 M370X · 2015
+- ⬜ AMD Radeon R9 M365X · 2015
+- ⬜ NVIDIA GeForce 945M · 2015
+- ⬜ AMD Radeon R9 M275 · 2014
+- ⬜ AMD Radeon R9 M270X · 2014
+- ⬜ NVIDIA GeForce 845M · 2015
+- ⬜ AMD Radeon R9 M375 · 2015
+- ⬜ AMD Radeon R7 M370 · 2015
+- ⬜ AMD Radeon R9 M265X · 2014
+- ⬜ NVIDIA GeForce MX130 · 2017
+- ✅ NVIDIA GeForce 940M · 2015
+- ⬜ NVIDIA GeForce 840M · 2014
+- ⬜ NVIDIA Quadro M520 · 2017
+- ⬜ AMD Radeon R5 M430 · 2016
+- ⬜ NVIDIA GeForce MX110 · 2017
+- ⬜ AMD Radeon R7 M440 · 2016
+- ⬜ AMD Radeon R7 M340 · 2015
+- ⬜ AMD Radeon R7 M445 · 2016
+- ⬜ NVIDIA GeForce 930M · 2015
+- ⬜ AMD Radeon R5 M420 · 2016
+- ⬜ NVIDIA GeForce 830M · 2014
+- ⬜ AMD Radeon R7 M260X · 2015
+- ⬜ AMD Radeon R7 M265 · 2014
+- ⬜ AMD Radeon R7 M270 · 2014
+- ⬜ AMD Radeon R7 M460 · 2016
+- ⬜ AMD Radeon R5 M335 · 2015
+- ⬜ AMD Radeon R7 M360 · 2015
+- ⬜ AMD Radeon R5 M255 · 2014
+- ⬜ NVIDIA GeForce 825M · 2014
+- ⬜ NVIDIA GeForce 920M · 2015
+- ⬜ AMD Radeon R5 M330 · 2015
+- ⬜ AMD Radeon R7 M260 · 2014
+- ⬜ AMD Radeon R5 M240 · 2014
+- ⬜ AMD Radeon R5 M320 · 2015
+- ⬜ NVIDIA GeForce 820M · 2015
+- ⬜ AMD Radeon HD 8550M · 2014
+- ⬜ NVIDIA GeForce GT 820M · 2014
+- ⬜ AMD Radeon R5 M230 · 2014
+- ⬜ NVIDIA GeForce 910M · 2015
+
+## 🔴 Приоритет C — десктоп, до 2014 — 193 шт.
+
+- ✅ NVIDIA GeForce GTX 690 · 2012
+- ⬜ AMD Radeon HD 7990 · 2013
+- ✅ NVIDIA GeForce GTX 780 Ti · 2013
+- ⬜ NVIDIA GeForce GTX TITAN · 2013
+- ✅ AMD Radeon R9 290X · 2013
+- ⬜ NVIDIA GeForce GTX 780 · 2013
+- ⬜ NVIDIA GeForce GTX 590 · 2011
+- ✅ AMD Radeon R9 280X · 2013
+- ⚠️ AMD Radeon HD 6990 · 2011 (legacy, один режим; 2× Cayman)
+- ✅ NVIDIA GeForce GTX 770 · 2013
+- ⬜ NVIDIA GeForce GTX 680 · 2012
+- ✅ AMD Radeon HD 7970 · 2011
+- ⬜ NVIDIA GeForce GTX 670 · 2012
+- ⚠️ NVIDIA GeForce GTX 760 · 2013 — legacy частичные режимы v1.35–v1.37
+- ⬜ ATI Radeon HD 5970 · 2009
+- ⬜ AMD Radeon HD 7950 · 2012
+- ⬜ NVIDIA GeForce GTX 580 · 2010
+- ⚠️ NVIDIA GeForce GTX 660 Ti · 2012 (legacy, один режим)
+- ✅ AMD Radeon R9 270X · 2013
+- ⬜ AMD Radeon HD 7870 XT · 2012
+- ⬜ AMD Radeon HD 7870 · 2012
+- ⬜ AMD Radeon R9 270 · 2013
+- ⬜ NVIDIA Quadro K5100M · 2013
+- ⬜ NVIDIA GeForce GTX 680MX · 2012
+- ⬜ NVIDIA GeForce GTX 570 · 2010
+- ✅ NVIDIA GeForce GTX 660 · 2012
+- ⬜ AMD Radeon HD 6970 · 2010
+- ⬜ NVIDIA GeForce GTX 480 · 2010
+- ⬜ NVIDIA GeForce GTX 560 Ti 448 Cores · 2011
+- ⬜ AMD Radeon HD 7850 · 2012
+- ⬜ NVIDIA GeForce GTX 650 Ti Boost · 2013
+- ⬜ NVIDIA GeForce GTX 295 · 2009
+- ⬜ AMD Radeon HD 6950 · 2010
+- ⬜ ATI Radeon HD 4870 X2 · 2008
+- ⬜ NVIDIA GeForce GTX 560 Ti · 2011
+- ⬜ ATI Radeon HD 5870 · 2009
+- ⬜ AMD Radeon R7 260X (2GB) · 2013
+- ⬜ AMD Radeon HD 6870 · 2010
+- ⬜ NVIDIA GeForce GTX 470 · 2010
+- ⬜ AMD Radeon HD 6930 · 2011
+- ⬜ AMD Radeon R7 260X (1GB) · 2013
+- ⬜ AMD Radeon HD 7790 · 2013
+- ⬜ NVIDIA GeForce GTX 650 Ti · 2012
+- ⬜ ATI Radeon HD 5850 · 2009
+- ⬜ NVIDIA GeForce GTX 560 · 2011
+- ⬜ NVIDIA GeForce GTX 285 · 2008
+- ⬜ AMD Radeon HD 6850 · 2010
+- ⬜ NVIDIA GeForce GTX 675MX · 2012
+- ⬜ NVIDIA Quadro K5000M · 2012
+- ⬜ NVIDIA Quadro K4100M · 2013
+- ⬜ AMD Radeon R7 260 · 2013
+- ⬜ NVIDIA GeForce GTX 465 · 2010
+- ⬜ NVIDIA GeForce GTX 280 · 2008
+- ⬜ AMD Radeon HD 7770 · 2012
+- ⬜ NVIDIA GeForce GTX 275 · 2009
+- ⬜ NVIDIA GeForce GTX 460 SE · 2010
+- ⬜ NVIDIA GeForce GTX 460 v2 · 2011
+- ⬜ NVIDIA GeForce GTX 460 · 2010
+- ⬜ NVIDIA GeForce GTX 670MX · 2012
+- ⬜ ATI Radeon HD 4890 · 2009
+- ⬜ AMD Radeon HD 6770 · 2011
+- ⬜ NVIDIA Quadro K4000M · 2012
+- ⬜ AMD Radeon HD 6790 · 2011
+- ⬜ NVIDIA GeForce GTX 560 SE · 2012
+- ⬜ NVIDIA Quadro K3100M · 2013
+- ⬜ ATI Radeon HD 5830 · 2010
+- ⬜ NVIDIA GeForce GTX 260 216SP · 2008
+- ⬜ NVIDIA GeForce GTX 650 · 2012
+- ⬜ NVIDIA GeForce GTX 550 Ti · 2011
+- ⬜ ATI Radeon HD 4870 · 2008
+- ⬜ NVIDIA GeForce GTX 260 · 2008
+- ⬜ ATI Radeon HD 5770 · 2009
+- ⬜ AMD Radeon HD 7750 · 2012
+- ⬜ NVIDIA GeForce 9800 GTX+ · 2009
+- ⬜ AMD Radeon R7 250 · 2013
+- ⬜ NVIDIA GeForce 9800 GTX · 2008
+- ⬜ ATI Radeon HD 4730 · 2009
+- ⬜ ATI Radeon HD 4850 X2 · 2008
+- ⬜ AMD Radeon HD 6750 · 2011
+- ⬜ ATI Radeon HD 5750 · 2009
+- ⬜ ATI Radeon HD 4860 · 2009
+- ⬜ NVIDIA GeForce GTS 450 · 2010
+- ⬜ NVIDIA GeForce GT 640 GDDR5 · 2012
+- ⬜ NVIDIA GeForce 8800 Ultra · 2007
+- ⬜ NVIDIA GeForce GTS 250 · 2009
+- ⬜ NVIDIA GeForce 9800 GX2 · 2008
+- ⬜ NVIDIA Quadro K3000M · 2012
+- ⬜ NVIDIA Quadro K2100M · 2013
+- ⬜ ATI Radeon HD 4850 · 2008
+- ⬜ NVIDIA GeForce GTS 150 · 2009
+- ⬜ ATI Radeon HD 4770 · 2009
+- ⬜ NVIDIA GeForce 8800 GTX · 2006
+- ⬜ NVIDIA GeForce GTS 240 · 2009
+- ⬜ ATI Radeon HD 4830 · 2008
+- ⬜ ATI Mobility Radeon HD 4870 · 2009
+- ⬜ AMD Radeon HD 6670 · 2011
+- ⬜ NVIDIA GeForce 9800 GT · 2008
+- ⬜ NVIDIA GeForce 8800 GT · 2007
+- ⬜ ATI Mobility Radeon HD 4850 · 2009
+- ⬜ NVIDIA GeForce GT 640 · 2012
+- ⬜ NVIDIA Quadro K1100M · 2013
+- ⬜ NVIDIA Quadro K2000M · 2012
+- ⬜ AMD Radeon R7 240 · 2013
+- ⬜ ATI Radeon HD 5670 · 2010
+- ⬜ ATI Mobility Radeon HD 3870 X2 · 2008
+- ⬜ NVIDIA GeForce 8800 GTS rev2 · 2007
+- ⬜ NVIDIA GeForce 9600 GT · 2008
+- ⬜ AMD Radeon HD 6570 · 2011
+- ⬜ NVIDIA GeForce GT 120 · 2009
+- ⬜ NVIDIA GeForce 9600 GSO · 2008
+- ⬜ NVIDIA GeForce 8800 GS · 2008
+- ⬜ ATI Mobility Radeon HD 5870 · 2010
+- ⬜ ATI Radeon HD 3870 X2 · 2008
+- ⬜ ATI Mobility Radeon HD 4830 · 2009
+- ⬜ ATI Mobility Radeon HD 5850 · 2010
+- ⬜ NVIDIA GeForce GT 240 · 2009
+- ⬜ ATI Mobility Radeon HD 4860 · 2009
+- ⬜ NVIDIA GeForce 9600 GT Green Edition · 2008
+- ⬜ NVIDIA GeForce GT 440 · 2011
+- ⬜ NVIDIA GeForce GT 230 (G92) · 2009
+- ⬜ NVIDIA GeForce GT 630 rev.2 · 2013
+- ⬜ ATI Radeon HD 3870 · 2007
+- ⬜ NVIDIA GeForce GT 630 · 2012
+- ⬜ ATI Radeon HD 4670 · 2008
+- ⬜ NVIDIA GeForce 8800 GTS · 2007
+- ⬜ ATI Radeon HD 5570 · 2010
+- ⬜ NVIDIA GeForce 8600 GTS · 2007
+- ⬜ ATI Mobility Radeon HD 3870 · 2008
+- ⬜ NVIDIA GeForce GT 430 · 2010
+- ⬜ ATI Radeon HD 3850 · 2007
+- ⬜ ATI Radeon HD 3850 AGP · 2008
+- ⬜ NVIDIA GeForce 9500 GT · 2008
+- ⬜ NVIDIA Quadro K610M · 2013
+- ⬜ ATI Radeon HD 3690 · 2008
+- ⬜ NVIDIA Quadro K1000M · 2012
+- ⬜ ATI Mobility Radeon HD 4650 · 2009
+- ⬜ ATI Radeon HD 4650 · 2008
+- ⬜ ATI Radeon HD 5550 · 2010
+- ⬜ ATI Mobility Radeon HD 5730 · 2010
+- ⬜ NVIDIA GeForce 9600 GSO (G94) · 2008
+- ⬜ NVIDIA GeForce GT 230 · 2009
+- ⬜ NVIDIA GeForce 8600 GT · 2007
+- ⬜ ATI Mobility Radeon HD 3850 · 2008
+- ⬜ ATI Radeon HD 3750 · 2008
+- ⬜ NVIDIA GeForce GT 220 · 2010
+- ⬜ ATI Radeon HD 3730 · 2008
+- ⬜ ATI Mobility Radeon HD 5650 · 2010
+- ⬜ NVIDIA GeForce GT 130 · 2009
+- ⬜ NVIDIA GeForce GT 610 · 2012
+- ⬜ NVIDIA GeForce GT 520 · 2011
+- ⬜ AMD Radeon HD 6450 · 2011
+- ⬜ NVIDIA GeForce GT 420 · 2010
+- ⬜ ATI Mobility Radeon HD 4670 · 2009
+- ⬜ NVIDIA GeForce GT 520MX · 2011
+- ⬜ ATI Radeon HD 5450 · 2010
+- ⬜ NVIDIA NVS 315 · 2013
+- ⬜ NVIDIA GeForce 8600 GS · 2007
+- ⬜ ATI Mobility Radeon HD 5165 · 2010
+- ⬜ ATI Mobility Radeon HD 550v · 2010
+- ⬜ NVIDIA NVS 310 · 2012
+- ⬜ ATI Radeon HD 4550 · 2008
+- ⬜ ATI Radeon HD 4350 · 2008
+- ⬜ ATI Mobility Radeon HD 3670 · 2008
+- ⬜ NVIDIA GeForce 9400 GT · 2008
+- ⬜ NVIDIA GeForce 8500 GT · 2007
+- ⬜ ATI Mobility Radeon HD 2600 XT · 2007
+- ⬜ ATI Mobility Radeon HD 5470 · 2010
+- ⬜ ATI Mobility Radeon HD 3650 · 2008
+- ⬜ ATI Mobility Radeon HD 5145 · 2010
+- ⬜ ATI Mobility Radeon HD 545v · 2010
+- ⬜ NVIDIA GeForce 210 · 2009
+- ⬜ ATI Mobility Radeon HD 5450 · 2010
+- ⬜ NVIDIA GeForce 9300 GS · 2008
+- ⬜ NVIDIA GeForce 8400 GS · 2007
+- ⬜ ATI Mobility Radeon HD 4570 · 2009
+- ⬜ NVIDIA GeForce 9300 GE · 2008
+- ⬜ NVIDIA GeForce G100 · 2009
+- ⬜ ATI Mobility Radeon HD 540v · 2010
+- ⬜ ATI Mobility Radeon HD 2600 · 2007
+- ⬜ ATI Mobility Radeon HD 5430 · 2010
+- ⬜ NVIDIA GeForce G210M · 2009
+- ⬜ ATI Mobility Radeon HD 4550 · 2010
+- ⬜ ATI Mobility Radeon HD 4530 · 2009
+- ⬜ ATI Mobility Radeon HD 4330 · 2009
+- ⬜ ATI Radeon HD 2350 · 2007
+- ⬜ NVIDIA GeForce G105M · 2009
+- ⬜ ATI Mobility Radeon HD 3470 · 2008
+- ⬜ NVIDIA GeForce 8300 GS · 2007
+- ⬜ ATI Mobility Radeon HD 2400 XT · 2007
+- ⬜ ATI Mobility Radeon HD 3450 · 2008
+- ⬜ ATI Mobility Radeon HD 3430 · 2008
+- ⬜ NVIDIA GeForce 205 · 2009
+- ⬜ ATI Mobility Radeon HD 2400 · 2007
+
+## 🔴 Приоритет C — мобильные, до 2014 — 163 шт.
+
+- ⚠️ NVIDIA GeForce GTX 780M · 2013
+- ⬜ AMD Radeon HD 8970M · 2013
+- ⬜ NVIDIA GeForce GTX 680M · 2012
+- ⬜ NVIDIA GeForce GTX 770M · 2013
+- ⬜ AMD FirePro M6100 · 2013
+- ⚠️ NVIDIA GeForce GTX 765M · 2013
+- ⬜ AMD Radeon HD 7970M · 2012
+- ⬜ NVIDIA GeForce GTX 760M · 2013
+- ⬜ AMD Radeon HD 6990M · 2011
+- ⬜ NVIDIA GeForce GTX 675M · 2012
+- ⬜ NVIDIA GeForce GTX 580M · 2011
+- ⬜ AMD Radeon HD 8870M · 2013
+- ⬜ AMD FirePro M5100 · 2013
+- ⬜ NVIDIA Quadro 5010M · 2011
+- ⬜ AMD Radeon HD 6970M · 2011
+- ⬜ NVIDIA GeForce GT 755M · 2013
+- ⬜ NVIDIA GeForce GTX 485M · 2011
+- ⬜ AMD FirePro M8900 · 2011
+- ⬜ AMD Radeon HD 7870M · 2012
+- ⬜ NVIDIA GeForce GTX 670M · 2012
+- ⬜ NVIDIA GeForce GT 750M · 2013
+- ⬜ AMD Radeon HD 7850M · 2012
+- ⬜ AMD Radeon HD 6950M · 2011
+- ⬜ AMD FirePro M6000 · 2012
+- ⬜ NVIDIA GeForce GTX 570M · 2011
+- ⬜ AMD Radeon HD 8850M · 2013
+- ⚠️ NVIDIA GeForce GTX 660M · 2012
+- ⬜ NVIDIA Quadro 5000M · 2010
+- ⬜ NVIDIA GeForce GT 745M · 2013
+- ⬜ AMD Radeon HD 8790M · 2013
+- ⬜ NVIDIA GeForce GTX 480M · 2010
+- ⚠️ NVIDIA GeForce GT 650M · 2012
+- ⬜ NVIDIA GeForce GTX 285M · 2010
+- ⬜ AMD Radeon HD 7770M · 2012
+- ⬜ NVIDIA Quadro 4000M · 2011
+- ⬜ AMD Radeon HD 7750M · 2012
+- ⬜ AMD Radeon HD 6870M · 2011
+- ⬜ NVIDIA GeForce GTX 470M · 2010
+- ⬜ AMD FirePro M4000 · 2012
+- ⬜ AMD Radeon HD 8770M · 2013
+- ⬜ NVIDIA Quadro FX 3800M · 2009
+- ⬜ NVIDIA GeForce GT 740M · 2013
+- ⬜ NVIDIA GeForce GT 645M · 2012
+- ⬜ NVIDIA GeForce 9800M GTX · 2008
+- ⬜ NVIDIA GeForce GTX 560M · 2011
+- ⬜ NVIDIA GeForce 9800M GT · 2008
+- ⬜ AMD Radeon HD 8830M · 2013
+- ⬜ ATI FirePro M7820 · 2010
+- ⬜ NVIDIA GeForce 8800M GTX · 2007
+- ⬜ NVIDIA Quadro FX 3700M · 2008
+- ⬜ NVIDIA GeForce 9800M GTS · 2008
+- ⬜ NVIDIA Quadro FX 2800M · 2009
+- ⬜ NVIDIA Quadro FX 3600M · 2008
+- ⬜ AMD FirePro M4100 · 2013
+- ⬜ AMD Radeon HD 8750M · 2013
+- ⬜ NVIDIA GeForce GT 640M · 2012
+- ⬜ NVIDIA GeForce GT 735M · 2013
+- ⬜ NVIDIA GeForce GT 730M · 2013
+- ⬜ NVIDIA GeForce GTS 160M · 2009
+- ⬜ NVIDIA GeForce 9800M GS · 2008
+- ⬜ NVIDIA GeForce GTX 460M · 2010
+- ⬜ AMD Radeon HD 8690M · 2013
+- ⬜ NVIDIA GeForce GTX 280M · 2009
+- ⬜ NVIDIA Quadro 3000M · 2011
+- ⬜ NVIDIA GeForce GTS 260M · 2009
+- ⬜ AMD Radeon HD 7730M · 2012
+- ⬜ AMD Radeon HD 6850M · 2011
+- ⬜ ATI FirePro M7740 · 2009
+- ⬜ NVIDIA GeForce GTX 260M · 2009
+- ⬜ NVIDIA GeForce GTS 250M · 2009
+- ⬜ AMD Radeon HD 8730M · 2013
+- ⬜ AMD FirePro M5950 · 2011
+- ⬜ AMD Radeon HD 7690M XT · 2013
+- ⬜ AMD Radeon HD 6770M · 2011
+- ⬜ NVIDIA GeForce GTS 360M · 2010
+- ⬜ AMD Radeon HD 8670M · 2013
+- ⬜ NVIDIA Quadro 2000M · 2011
+- ⬜ NVIDIA GeForce GT 640M LE · 2012
+- ⬜ AMD Radeon HD 8570M · 2013
+- ⬜ ATI FirePro M5800 · 2010
+- ⬜ NVIDIA GeForce GT 720M · 2013
+- ⬜ NVIDIA GeForce 8800M GTS · 2007
+- ⬜ AMD Radeon HD 8590M · 2013
+- ⬜ AMD Radeon HD 6750M · 2011
+- ⬜ NVIDIA GeForce GT 445M · 2010
+- ⬜ NVIDIA GeForce GT 555M · 2011
+- ⬜ AMD Radeon HD 6730M · 2011
+- ⬜ AMD Radeon HD 7690M · 2011
+- ⬜ NVIDIA NVS 5400M · 2012
+- ⬜ NVIDIA GeForce GT 635M · 2012
+- ⬜ NVIDIA GeForce GT 710M · 2013
+- ⬜ AMD Radeon HD 6570M · 2010
+- ⬜ NVIDIA GeForce GT 240M · 2009
+- ⬜ AMD Radeon HD 7670M · 2012
+- ⬜ NVIDIA GeForce GT 630M · 2012
+- ⬜ AMD Radeon HD 6650M · 2011
+- ⬜ NVIDIA NVS 5200M · 2012
+- ⬜ AMD Radeon HD 6550M · 2010
+- ⬜ NVIDIA GeForce GT 550M · 2011
+- ⬜ AMD Radeon HD 7650M · 2012
+- ⬜ NVIDIA Quadro 1000M · 2011
+- ⬜ NVIDIA GeForce GT 625M · 2012
+- ⬜ NVIDIA GeForce GT 620M · 2012
+- ⬜ NVIDIA GeForce GT 540M · 2011
+- ⬜ AMD Radeon HD 6630M · 2011
+- ⬜ AMD FirePro M2000 · 2012
+- ⬜ NVIDIA GeForce 8700M GT · 2007
+- ⬜ AMD Radeon HD 7570M · 2012
+- ⬜ NVIDIA GeForce GT 525M · 2011
+- ⬜ NVIDIA GeForce GT 435M · 2010
+- ⬜ AMD Radeon HD 7550M · 2012
+- ⬜ AMD Radeon HD 7610M · 2012
+- ⬜ NVIDIA GeForce GT 130M · 2009
+- ⬜ NVIDIA GeForce 9700M GTS · 2008
+- ⬜ AMD Radeon HD 6490M · 2011
+- ⬜ AMD Radeon HD 7450M · 2012
+- ⬜ NVIDIA GeForce GT 425M · 2010
+- ⬜ NVIDIA GeForce 705M · 2013
+- ⬜ AMD Radeon HD 6470M · 2011
+- ⬜ NVIDIA GeForce GT 420M · 2010
+- ⬜ NVIDIA GeForce GT 335M · 2010
+- ⬜ NVIDIA GeForce 9650M GT · 2008
+- ⬜ AMD Radeon HD 7470M · 2012
+- ⬜ NVIDIA GeForce GT 330M · 2010
+- ⬜ NVIDIA GeForce 610M · 2011
+- ⬜ NVIDIA Quadro FX 880M · 2010
+- ⬜ NVIDIA GeForce GT 520M · 2011
+- ⬜ NVIDIA NVS 4200M · 2011
+- ⬜ NVIDIA GeForce GT 230M · 2009
+- ⬜ NVIDIA GeForce GT 325M · 2010
+- ⬜ NVIDIA GeForce 9650M GS · 2008
+- ⬜ NVIDIA GeForce GT 220M · 2009
+- ⬜ NVIDIA Quadro FX 770M · 2008
+- ⬜ AMD Radeon HD 6450M · 2011
+- ⬜ NVIDIA Quadro FX 1700M · 2008
+- ⬜ NVIDIA GeForce 9600M GT · 2008
+- ⬜ NVIDIA Quadro FX 1600M · 2007
+- ⬜ NVIDIA GeForce 410M · 2011
+- ⬜ NVIDIA Quadro NVS 320M · 2007
+- ⬜ NVIDIA GeForce 9600M GS · 2008
+- ⬜ NVIDIA GeForce GT 320M · 2010
+- ⬜ NVIDIA GeForce GT 415M · 2010
+- ⬜ NVIDIA GeForce 9500M GS · 2008
+- ⬜ NVIDIA GeForce 9300M G · 2008
+- ⬜ AMD Radeon HD 6370M · 2010
+- ⬜ NVIDIA GeForce 9300M GS · 2008
+- ⬜ NVIDIA Quadro FX 570M · 2007
+- ⬜ NVIDIA GeForce 8600M GT · 2007
+- ⬜ NVIDIA GeForce 310M · 2010
+- ⬜ NVIDIA NVS 3100M · 2010
+- ⬜ NVIDIA GeForce 315M · 2011
+- ⬜ NVIDIA NVS 2100M · 2010
+- ⬜ NVIDIA GeForce 9500M G · 2008
+- ⬜ NVIDIA GeForce 8600M GS · 2007
+- ⬜ NVIDIA GeForce 8400M GT · 2007
+- ⬜ NVIDIA Quadro NVS 160M · 2008
+- ⬜ NVIDIA Quadro NVS 140M · 2007
+- ⬜ NVIDIA Quadro NVS 150M · 2008
+- ⬜ NVIDIA Quadro FX 370M · 2008
+- ⬜ NVIDIA GeForce 9200M GS · 2008
+- ⬜ NVIDIA Quadro FX 360M · 2007
+- ⬜ NVIDIA GeForce 8400M GS · 2007
+- ⬜ NVIDIA GeForce 8400M G · 2007

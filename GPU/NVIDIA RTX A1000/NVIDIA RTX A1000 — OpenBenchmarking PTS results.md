@@ -1,0 +1,21 @@
+# NVIDIA RTX A1000 — OpenBenchmarking Hashcat measurements (partial, no stdout)
+
+- **Evidence:** PTS-published individual benchmark values; no raw Hashcat console stdout is available from these result exports.
+- **PTS runner:** profile executes `hashcat -b --benchmark-min=30` with the per-mode arguments below.
+- **Values:** exact PTS mean in H/s and exact repeat values when PTS publishes them. A PTS repeat is not a copied `Speed.#N` console line.
+- **Hardware:** exact PTS graphics descriptor is kept per row; aliases are explained in the note below.
+
+| Date | Hashcat | Mode | Benchmark | Mean (H/s) | Readable speed | PTS repeat values (H/s) | PTS GPU label | CPU host context | Args | Result |
+|---|---|---:|---|---:|---:|---|---|---|---|---|
+| 2026-04-27 | 7.1.2 | 100 | Benchmark: SHA1 | 4781633333 | 4.782 GH/s | 4795300000, 4785500000, 4789300000, 4767000000, 4778800000, 4773900000 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 100` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+| 2026-04-27 | 7.1.2 | 1000 | Benchmark: NTLM | 21296183333 | 21.3 GH/s | 21406800000, 21431400000, 21218900000, 21274500000, 21204900000, 21240600000 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 1000` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+| 2026-04-27 | 7.1.2 | 1400 | Benchmark: SHA-256 | 1767080000 | 1.767 GH/s | 1782900000, 1768100000, 1766400000, 1759900000, 1758100000 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 1400` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+| 2026-04-27 | 7.1.2 | 1700 | Benchmark: SHA-512 | 614760000 | 614.8 MH/s | 619800000, 614600000, 613600000, 613500000, 612300000 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 1700` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+| 2026-04-27 | 7.1.2 | 3200 | Benchmark: bcrypt | 23554 | 23.55 kH/s | 23575, 23576, 23566, 23527, 23509, 23573 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 3200` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+| 2026-04-27 | 7.1.2 | 6211 | Benchmark: TrueCrypt RIPEMD160 + XTS | 165200 | 165.2 kH/s | 166800, 165000, 165000, 164700, 164500 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 6211` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+| 2026-04-27 | 7.1.2 | 6800 | Benchmark: LastPass | 7573 | 7.573 kH/s | 7641, 7579, 7556, 7542, 7547 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 6800` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+| 2026-04-27 | 7.1.2 | 11600 | Benchmark: 7-Zip | 223883 | 223.9 kH/s | 225400, 224600, 223400, 223800, 223200, 222900 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 11600` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+| 2026-04-27 | 7.1.2 | 13100 | Benchmark: Kerberos 5 + etype 23 + TGS-REP | 269700000 | 269.7 MH/s | 270500000, 270300000, 270400000, 268900000, 269000000, 269100000, 269700000 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 13100` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+| 2026-04-27 | 7.1.2 | 22000 | Benchmark: WPA-PBKDF2-PMKID+EAPOL | 226340 | 226.3 kH/s | 228600, 226700, 226100, 225400, 224900 | NVIDIA RTX A1000 8GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 22000` | [2604303-PTS-NVIDIART54](https://openbenchmarking.org/result/2604303-PTS-NVIDIART54) |
+
+**Measurements in this card:** 10 PTS rows. CPU host is shown only as system context; these rows do not constitute CPU-only benchmarks.

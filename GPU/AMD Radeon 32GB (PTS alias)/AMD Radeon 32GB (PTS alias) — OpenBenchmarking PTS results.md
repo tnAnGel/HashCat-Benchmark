@@ -1,0 +1,25 @@
+# AMD Radeon 32GB (PTS alias) — OpenBenchmarking Hashcat measurements (partial, no stdout)
+
+- **Evidence:** PTS-published individual benchmark values; no raw Hashcat console stdout is available from these result exports.
+- **PTS runner:** profile executes `hashcat -b --benchmark-min=30` with the per-mode arguments below.
+- **Values:** exact PTS mean in H/s and exact repeat values when PTS publishes them. A PTS repeat is not a copied `Speed.#N` console line.
+- **Hardware:** exact PTS graphics descriptor is kept per row; aliases are explained in the note below.
+
+> PTS reports only the generic graphics label “Gigabyte AMD Radeon 32GB”; exact GPU model cannot be confirmed from this result. Not assigned to Radeon AI PRO R9700.
+
+| Date | Hashcat | Mode | Benchmark | Mean (H/s) | Readable speed | PTS repeat values (H/s) | PTS GPU label | CPU host context | Args | Result |
+|---|---|---:|---|---:|---:|---|---|---|---|---|
+| 2026-05-06 | 7.1.2 | 0 | Benchmark: MD5 | 48847366667 | 48.85 GH/s | 48859600000, 48851500000, 48883100000, 48871700000, 48821400000, 48796900000 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 0` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 100 | Benchmark: SHA1 | 22586066667 | 22.59 GH/s | 22645800000, 22604900000, 22566800000, 22561800000, 22568500000, 22568600000 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 100` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 1000 | Benchmark: NTLM | 86731900000 | 86.73 GH/s | 86777100000, 86636400000, 86554700000, 85867800000, 88703300000, 85852100000 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 1000` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 1400 | Benchmark: SHA-256 | 9687283333 | 9.687 GH/s | 9711100000, 9695500000, 9680900000, 9677500000, 9683300000, 9675400000 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 1400` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 1700 | Benchmark: SHA-512 | 2472520000 | 2.473 GH/s | 2480500000, 2474500000, 2470300000, 2468900000, 2468400000 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 1700` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 3200 | Benchmark: bcrypt | 76991 | 76.99 kH/s | 76678, 77035, 77043, 77229, 76963, 76926, 77066 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 3200` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 6211 | Benchmark: TrueCrypt RIPEMD160 + XTS | 782140 | 782.1 kH/s | 783600, 782000, 781300, 781600, 782200 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 6211` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 6800 | Benchmark: LastPass | 40190 | 40.19 kH/s | 40343, 40180, 40110, 40167, 40148 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 6800` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 11600 | Benchmark: 7-Zip | 1246833 | 1.247 MH/s | 1250600, 1249900, 1247200, 1245900, 1243800, 1243600 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 11600` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 13100 | Benchmark: Kerberos 5 + etype 23 + TGS-REP | 1154983333 | 1.155 GH/s | 1158000000, 1156200000, 1154700000, 1154600000, 1154000000, 1152400000 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 13100` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 22000 | Benchmark: WPA-PBKDF2-PMKID+EAPOL | 1163180 | 1.163 MH/s | 1166200, 1163200, 1162600, 1162100, 1161800 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 22000` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+| 2026-05-06 | 7.1.2 | 34100 | Benchmark: LUKS v2 argon2id + SHA-256 + AES | 29 | 29 H/s | 29, 29, 29, 29, 29 | Gigabyte AMD Radeon 32GB | AMD Ryzen Threadripper 9980X 64-Cores @ 5.48GHz (64 Cores / 128 Threads) | `-m 34100` | [2605086-NE-2605064NE67](https://openbenchmarking.org/result/2605086-NE-2605064NE67) |
+
+**Measurements in this card:** 12 PTS rows. CPU host is shown only as system context; these rows do not constitute CPU-only benchmarks.
